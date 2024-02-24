@@ -1,0 +1,3 @@
+1)fare un ciclo FOR che stampa N frasi uguali di N colori diversi.
+
+2)form in cui inseriamo un codice fiscale ed il nostro programma deve accorgersi se è valido (bastano anche solo lettere e numeri nelle posizioini giuste).

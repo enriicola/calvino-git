@@ -1,0 +1,28 @@
+# Project: Progetto1
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = Impiccato_Finale.o
+LINKOBJ  = Impiccato_Finale.o
+LIBS     = -L"D:/Bonafe Pezzano/Informatica/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/lib" -L"D:/Bonafe Pezzano/Informatica/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"D:/Bonafe Pezzano/Informatica/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/include" -I"D:/Bonafe Pezzano/Informatica/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Bonafe Pezzano/Informatica/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"D:/Bonafe Pezzano/Informatica/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/include" -I"D:/Bonafe Pezzano/Informatica/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Bonafe Pezzano/Informatica/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"D:/Bonafe Pezzano/Informatica/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = Impiccato_Finale.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Impiccato_Finale.o: Impiccato_Finale.c
+	$(CC) -c Impiccato_Finale.c -o Impiccato_Finale.o $(CFLAGS)

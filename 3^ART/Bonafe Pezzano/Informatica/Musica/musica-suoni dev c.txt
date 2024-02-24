@@ -1,0 +1,20 @@
+#include <windows.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+//Importante:
+//project > project options > parameters and type "-lwinmm" in the LINKER section
+
+//PER IL MOUSE:
+//https://sites.google.com/site/info4borgo/
+
+
+
+int main()
+{    
+    PlaySound("C:/WINDOWS/Media/tada.wav", NULL, SND_FILENAME);
+ 
+   
+    system("PAUSE");    
+    return 0;
+}
