@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Form Iscrizione</title>
+  <link href="stile.css" rel="stylesheet" type="text/css" media="all" />
+  <meta charset="utf-8">
+  <script type="text/javascript" src="mio.js"></script>
+ </head>
+ 
+ 
+ 
+  <body text="white" bgcolor="black" vlink="white">
+
+    <br><br><br><br>
+    <h1 align="center"> Form d'iscrizione</h1>
+    <br><br>
+	<table align="center" id="f01">
+	<div id="form"> 
+		
+		<form name="form">
+		    <tr><td>
+			<label for="fname"><h4> Nome </h4></label>
+			<input type="text" id="fname" name="fname" placeholder="Inserisci il tuo nome...">
+            <td><tr>
+			
+			<tr><td
+			<label for="lname"><h4> Cognome </h4></label>
+			<input type="text" id="lname" name="lname" placeholder="Inserisci il tuo cognome...">
+			<td><tr>
+			
+			<tr><td>
+			<label for="email"><h4> Email </h4></label>
+			<input type="text" id="email" name="email" placeholder="Inserisci la tua mail...">
+            <td><tr>
+	
+			<tr><td>
+			<label for="psw"><h4> Password </h4></label>
+			<input type="password" id="psw" name="password" placeholder="Password: prova00">
+			<td><tr>
+			
+			<tr><td>
+			<label for="Sesso"><h4> Sesso </h4></label>
+			<select id="Sesso" name="Sesso">
+				<option value="Maschio"> Maschio </option>
+				<option value="Femmina"> Femmina </option>
+			</select>
+			<td><tr>
+			
+			<tr><td>
+			<label for="Età"><h4> Età </h4></label>
+			<select id="Età" name="Età">
+				<option value="Maggiorenne"> Maggiorenne </option>
+				<option value="Minorenne"> Minorenne </option>
+			</select>
+			<td><tr>
+			
+			<tr><td>
+			<label for="provincia"><h4> Inserisci la regione di provenienza </h4></label>
+			<select id="provincia" name="provincia">
+				<option value="Abruzzo"> Abruzzo </option>
+				<option value="Basilicata"> Basilicata </option>
+				<option value="Calabria"> Calabria </option>
+				<option value="Campania"> Campania </option>
+				<option value="Emilia-Romagna"> Emilia-Romagna </option>
+				<option value="Friuli-Venezia Giulia"> Friuli-Venezia Giulia </option>
+				<option value="Lazio"> Lazio </option>
+				<option value="Liguria"> Liguria </option>
+				<option value="Lombardia"> Lombardia </option>
+				<option value="Marche"> Marche </option>
+				<option value="Molise"> Molise </option>
+				<option value="Piemonte"> Piemonte </option>
+				<option value="Puglia"> Puglia </option>
+				<option value="Sardegna"> Sardegna </option>
+				<option value="Sicilia"> Sicilia </option>
+				<option value="Toscana"> Toscana </option>
+				<option value="Trentino-Alto Adige"> Trentino-Alto Adige </option>
+				<option value="Umbria"> Umbria </option>
+				<option value="Valle d'Aosta"> Valle d'Aosta </option>
+				<option value="Veneto"> Veneto </option>
+			</select>
+			<td><tr>
+			
+			<tr><td>
+			<label for="Valutazione"><h4> Lascia una recensione! </h4></label>
+			<select id="recensione" name="recensione">
+				<option value="5"> ♥ ♥ ♥ ♥ ♥ </option>
+				<option value="4"> ♥ ♥ ♥ ♥ </option>
+				<option value="3"> ♥ ♥ ♥ </option>
+				<option value="2"> ♥ ♥ </option>
+				<option value="1"> ♥ </option>
+			</select>
+			<td><tr>
+			
+			<tr><td>
+			<textarea> Possiamo sempre migliorare! Lascia la tua opinione... </textarea>
+			<td><tr>
+			
+			<tr><td>
+			<input type="submit" value="invia" onclick="controlli()">
+			<input type="reset" value="reset">
+			<td><tr>
+		</form>
+	</div>
+	</table>
+<br><br><br><br><br>
+	<h5 align="center"> Creato da Matteo Caneva ed Enrico Pezzano </h5>
+</body>
+</html>

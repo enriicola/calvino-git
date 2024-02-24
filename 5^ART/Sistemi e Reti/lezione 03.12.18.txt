@@ -1,0 +1,3 @@
+dns=creare un collegamento tra un indirizzo ip e un nome e siamo abituati che questi siano univoci.
+In realtà non è detto perchè potrei avere google.it visto dalla rete di google che in realtà ha un altro indirizzo.
+Se sono dentro google e faccio una richiesta non passo da internet perchè ci sono già dentro. 

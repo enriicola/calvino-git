@@ -1,0 +1,19 @@
+mysql_select_db ("$nomearchivio");
+  or die ("impossibile connettersi al database nomearchivio";
+   /* impostare la query e visualizzare un nome alla volta */
+   $ sql query = "SELECT * FROM $r WHERE $ nomearchivio = '  ' ";
+   $result = mysql_query ($ sql query);
+   $r = mysql_num_rows ($ result);
+   $r =0;
+   if ($r<1) {
+   print "<center><p> la ricerca non ha prodotto alcun risultato </p></center>";
+   }  else    {
+                   {
+   while ($r)=mysqli_fetch assoc($result)
+   echo "<p><b> nomearchivio:</b> $nomearchivio  <br>;
+   $r++
+       }
+   }
+   ?>
+   </body>
+   </html>   

@@ -1,0 +1,199 @@
+<html>
+<body>
+<img style="display:none" id="nap" src="napoleone.jpg" width="246" height="299">
+	<canvas id="myCanvas" width="1100" height="1050" style="border:1px solid #000000;">
+	<script>	
+		var c = document.getElementById("myCanvas");
+		var ctx = c.getContext("2d");
+		
+		//italia
+		ctx.lineWidth="2";
+		ctx.strokeStyle="black";
+		ctx.rect(20,20,300,170);
+		ctx.fillStyle="green";
+		ctx.fillRect(20, 20, 100, 170);
+		ctx.fillStyle="white";
+		ctx.fillRect(120, 20, 100, 170);
+		ctx.fillStyle="red";
+		ctx.fillRect(220, 20, 100, 170);
+		ctx.stroke();
+		
+		//giappone
+		ctx.beginPath();
+		ctx.lineWidth="2";
+		ctx.strokeStyle="black";
+		ctx.rect(20,250,300,170);
+		ctx.stroke();
+		ctx.beginPath();
+		ctx.arc(170,335,55,0,2*Math.PI);
+		ctx.fillStyle = "red";
+		ctx.fill();
+		ctx.stroke();
+		
+		//francia
+		ctx.lineWidth="2";
+		ctx.strokeStyle="black";
+		ctx.rect(380,20,300,170);
+		ctx.fillStyle="blue";
+		ctx.fillRect(380, 20, 100, 170);
+		ctx.fillStyle="white";
+		ctx.fillRect(480, 20, 100, 170);
+		ctx.fillStyle="red";
+		ctx.fillRect(580, 20, 100, 170);
+		ctx.stroke();
+		
+		//belgio
+		ctx.lineWidth="2";
+		ctx.strokeStyle="black";
+		ctx.rect(740,20,300,170);
+		ctx.fillStyle="black";
+		ctx.fillRect(740, 20, 100, 170);
+		ctx.fillStyle="yellow";
+		ctx.fillRect(840, 20, 100, 170);
+		ctx.fillStyle="red";
+		ctx.fillRect(940, 20, 100, 170);
+		ctx.stroke();
+		
+		//germania
+		ctx.lineWidth="2";
+		ctx.strokeStyle="black";
+		ctx.rect(380,250,300,170);
+		ctx.fillStyle="black";
+		ctx.fillRect(380, 250, 300, 57);
+		ctx.fillStyle="red";
+		ctx.fillRect(380, 307, 300, 57);
+		ctx.fillStyle="yellow";
+		ctx.fillRect(380, 363, 300, 56);
+		ctx.stroke();
+		
+		//lituania
+		ctx.lineWidth="2";
+		ctx.strokeStyle="black";
+		ctx.rect(740,250,300,170);
+		ctx.fillStyle="yellow";
+		ctx.fillRect(740, 250, 300, 57);
+		ctx.fillStyle="green";
+		ctx.fillRect(740, 307, 300, 57);
+		ctx.fillStyle="red";
+		ctx.fillRect(740, 363, 300, 56);
+		ctx.stroke();
+		
+		//svezia
+		ctx.lineWidth="2";
+		ctx.strokeStyle="black";
+		ctx.rect(20,480,300,170);
+		ctx.fillStyle="cyan";
+		ctx.fillRect(20, 480, 300, 170);
+		ctx.fillStyle="yellow";
+		ctx.fillRect(20, 548, 300, 34);
+		ctx.fillStyle="yellow";
+		ctx.fillRect(88, 480, 34, 170);
+		ctx.stroke();
+		
+		//danimarca
+		ctx.lineWidth="2";
+		ctx.strokeStyle="black";
+		ctx.rect(380,480,300,170);
+		ctx.fillStyle="red";
+		ctx.fillRect(380, 480, 68, 68);
+		ctx.fillStyle="red";
+		ctx.fillRect(482, 480, 198, 68);
+		ctx.fillStyle="red";
+		ctx.fillRect(380, 582, 68, 68);
+		ctx.fillStyle="red";
+		ctx.fillRect(482, 582, 198, 68);
+		ctx.stroke();
+		
+		
+		//inghilterra
+		ctx.fillStyle="blue";
+		ctx.fillRect(740,480,300,170);
+		ctx.fillStyle="white";
+		ctx.fillRect(860,480,35,170);
+		ctx.fillStyle="white";
+		ctx.fillRect(740,558,300,35);
+		ctx.fillStyle="red";
+		ctx.fillRect(868,480,20,170);
+		ctx.fillStyle="red";
+		ctx.fillRect(740,565,300,20);
+		ctx.stroke();
+		
+		//diagonale bianca 1
+		ctx.beginPath();
+		ctx.moveTo(740,480);
+		ctx.lineTo(858,556);
+		ctx.lineWidth="20";
+		ctx.strokeStyle="white";
+		ctx.stroke();
+		//diagonale rossa 1
+		ctx.beginPath();
+		ctx.moveTo(741,483);
+		ctx.lineTo(870,565);
+		ctx.lineWidth="10";
+		ctx.strokeStyle="red";
+		ctx.stroke();
+		
+		//diagonale bianca 2
+		ctx.beginPath();
+		ctx.moveTo(895,556);
+		ctx.lineTo(1040,480);
+		ctx.lineWidth="20";
+		ctx.strokeStyle="white";
+		ctx.stroke();
+		//diagonale rossa 2
+		ctx.beginPath();
+		ctx.moveTo(870,573);
+		ctx.lineTo(1038,483);
+		ctx.lineWidth="10";
+		ctx.strokeStyle="red";
+		ctx.stroke();
+		
+		//diagonale bianca 3
+		ctx.beginPath();
+		ctx.moveTo(740,650);
+		ctx.lineTo(860,595);
+		ctx.lineWidth="20";
+		ctx.strokeStyle="white";
+		ctx.stroke();
+		//diagonale rossa 3
+		ctx.beginPath();
+		ctx.moveTo(742,647);
+		ctx.lineTo(870,588);
+		ctx.lineWidth="10";
+		ctx.strokeStyle="red";
+		ctx.stroke();
+		
+		//diagonale bianca 4
+		ctx.beginPath();
+		ctx.moveTo(1040,650);
+		ctx.lineTo(895,594);
+		ctx.lineWidth="20";
+		ctx.strokeStyle="white";
+		ctx.stroke();
+		//diagonale rossa 4
+		ctx.beginPath();
+		ctx.moveTo(1038,646);
+		ctx.lineTo(887,588);
+		ctx.lineWidth="10";
+		ctx.strokeStyle="red";
+		ctx.stroke();	
+		
+		
+		ctx.beginPath();
+		ctx.lineWidth="2";
+		ctx.strokeStyle="black";
+		ctx.rect(740,480,300,170);
+		ctx.stroke();
+		
+		
+		//napoleone		
+	</script>
+	</canvas>
+	<script>
+	window.onload = function() {
+		var img = document.getElementById("nap");
+		ctx.drawImage(img, 410, 700);
+	}
+</script>
+</body>
+</html>

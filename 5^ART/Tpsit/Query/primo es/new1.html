@@ -1,0 +1,57 @@
+<html>
+<head>
+	<script 
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+</head>
+<body>
+
+<h1 align="center" style="color:blue;"> SPOSTA IL MOUSE! </h1>
+<table>
+	<tr>
+		<th><img id="sw" src="button1.gif" width="400"></th>
+		<th><img id="goku" src="gokustatic.jpg" width="400"></th>
+		<th><img id="wiz" src="wizardstatic.jpg" width="400"></th>
+	</tr>
+</table>
+	
+<script>
+	$(function() {
+		$("#sw").hover(
+			function() {
+				$(this).attr("src", "button2.gif");
+			},
+			function() {
+				$(this).attr("src", "button1.gif");
+			}                         
+		);                  
+	});
+</script>
+
+<script>
+	$(function() {
+		$("#goku").hover(
+			function() {
+				$(this).attr("src", "goku.gif");
+			},
+			function() {
+				$(this).attr("src", "gokustatic.jpg");
+			}                         
+		);                  
+	});
+</script>
+
+<script>
+	$(function() {
+		$("#wiz").hover(
+			function() {
+				$(this).attr("src", "wizard.gif");
+			},
+			function() {
+				$(this).attr("src", "wizardstatic.jpg");
+			}                         
+		);                  
+	});
+</script>
+</body>
+</html>  

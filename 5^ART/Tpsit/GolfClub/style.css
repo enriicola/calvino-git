@@ -1,0 +1,193 @@
+#np{/*n e p stanno per 'next previous'*/
+	text-decoration: none;
+	display: inline-block;
+	padding: 24px 40px;
+	border-radius: 50%;
+	background-color: black;
+	color: white;
+	cursor: pointer;
+}
+#np:hover{
+	background-color: white;
+	color: black;
+}
+#scorrimento{
+	display:block;
+	margin-left:330px;
+	margin-right:330px;
+	width:50%;
+	float:center;
+}
+#accesso{display:block;}
+#registrazione{display:none;}
+h4{text-align:center;}
+#home{}
+#home img{
+	border: 1px solid black;
+}
+#galleria{display:none;}
+#generazioni{display:none;}
+#eventi{display:none;}
+#tuning{display:none;}
+#forum{display:none;}
+#articolo{display:none;}
+#fortuna{display:none;}
+#faq{display:none;}
+#areautente{display:none;}
+#commenta{
+	display:none;
+	float:center;
+}
+#forum p{
+	border: 1px solid black;
+}
+#forum a{
+	color:black;
+}
+#logout {
+  color: white;
+  padding: 10px 40px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: red; 
+  color: black; 
+  border: 2px solid #f44336;
+}
+
+#logout:hover {
+  background-color: white;
+}
+#boxsfondo{/*box per lo sfondo*/
+	width:1475px;
+    height:650px;
+    background:grey;
+    top:100px;
+	left:25px;
+    position: absolute;
+	opacity:0.90;
+	overflow:auto;
+}
+#box{/*box per oscurare e mettere un form*/
+	width:320px;
+    height:470px;
+    background:black;
+    color:white;
+    top:60%;
+    left:50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+	opacity: 0.85;
+}
+#boxsu{/*box per oscurare e mettere un form*/
+    width:320px;
+    height:700px;
+    background:black;
+    color:white;
+    top:77%;
+    left:50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+	opacity: 0.85;
+}
+#log{
+	position:absolute;
+	width:290px;
+	margin:15px;
+	opacity:1;
+}
+#red{
+	width:100%;
+	background-color:red;
+	color:white;
+	padding:20px 60px;
+	border:none;
+	border-radius:40px;
+	cursor:pointer;
+}
+@font-face {
+  font-family: 'magneto';
+  src: URL('magnetob.ttf') format('truetype');
+}
+body{
+	margin-left:2;
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: url("img/paper.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+body.golfclub{
+	background-image: url("img/wallpaper.jpg");
+}
+body.index{
+	background-image: url("img/wallpaper.jpg");
+}
+body.accesso{
+	background-image: url("img/paper.jpg");
+}
+a.active {
+  background-color: red;
+  color: white;
+}
+input[type=submit]{
+	width:100%;
+	background-color:#4CAF50;
+	color:white;
+	padding:20px 60px;
+	border:none;
+	border-radius:40px;
+	cursor:pointer;
+}
+input[type=text], select {
+	width:100%;
+	padding:20px 60px;
+	border:5px solid #CCC;
+	border-radius:40px;
+	box-sizing:border-box;
+}
+input[type=password], select {
+	width:100%;
+	padding:20px 60px;
+	border:5px solid #CCC;
+	border-radius:40px;
+	box-sizing:border-box;
+}
+header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+.content {
+  padding: 16px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+#navbar {/*barra del menù*/
+  text-align: center;
+  overflow: hidden;
+  background-color: #333;
+}
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 10%;
+  text-decoration: none;
+  font-size: 17px;
+  cursor:pointer;
+}
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}#navbar a:active {
+  background-color: #696969;
+  color: white;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+
+<meta name="keywords" content="Basi di dati (database), Le gerarchie ">
+<meta name="description" content="Basi di dati (database) Le gerarchie ">
+<meta name="GENERATOR" content="Blocco note di Win95">
+<meta name="author" content="Cristian Granata">
+
+
+<title>
+Basi di dati (database), Le gerarchie
+</title> 
+<link rel="stylesheet" type="text/css" href="Basi%20di%20dati%20(database),%20Le%20gerarchie_files/informatica.css">
+
+</head> 
+<body>
+<table width="100%" border="0">
+  <tbody><tr>
+    <td width="33%"><img src="Basi%20di%20dati%20(database),%20Le%20gerarchie_files/dacrema.gif" usemap="#Map" border="0"></td>
+    <td><div align="center"><p><a href="http://www.dacrema.com/Informatica/perc_db.htm" target="_top">Basi di dati elementi</a></p></div></td>
+    <td width="33%"><div align="right"><img src="Basi%20di%20dati%20(database),%20Le%20gerarchie_files/logoapp.gif" usemap="#Map2" width="200" height="30" border="0"></div></td>
+  </tr>
+</tbody></table>
+<map name="Map">
+  <area shape="rect" coords="0,2,196,28" href="http://www.dacrema.com/index.html">
+</map>
+<map name="Map2">
+  <area shape="rect" coords="4,1,187,29" href="http://www.dacrema.com/Appunicri/appunicri.htm">
+</map>
+<h1>Le gerarchie  nel <a href="http://www.dacrema.com/Informatica/er.htm">modello Entità-Relazione</a></h1>
+<p align="justify">Spesso nella analisi di un settore aziendale può risultare che più entità risultino simili o casi particolari l’una dell’altra.
+Emerge quindi la necessità di evidenziare sottoclassi di alcune classi.
+A tale proposito è stato introdotto il concetto di  <strong>gerarchia</strong> che definisce  il legame logico che esiste tra classi e sottoclassi.
+La gerarchia concettuale è il legame logico tra un’entità padre E ed alcune entità figlie E1 E2 .. En dove:
+</p>
+<ul>
+<li><p>E è la generalizzazione di E1 E2 .. En</p></li>
+<li><p>E1 E2 .. En sono specializzazioni di E</p></li>
+<li><p>una istanza di Ek è anche istanza di E </p></li>
+<li><p>una istanza di E può essere una istanza di Ek</p></li>
+</ul>
+<p>Per esempio un’azienda si avvale dell’opera di professionisti 
+esterni, quindi il suo personale si suddivide in esterni e dipendenti:</p>
+<img src="Basi%20di%20dati%20(database),%20Le%20gerarchie_files/db28.jfif" border="1"> 
+ <p align="justify">La letteria <strong>t </strong>indica <strong>totale</strong>, ovvero ogni istanza dell’ entità padre deve far parte di almeno una entità figlia. La lettera <strong>e</strong> sta per <strong>esclusiva</strong>: ogni istanza dell’entità padre deve far parte di una sola delle entità figlie.
+Quindi l' intero personale può essere per forza o dipendete o esterno.
+ Altro esempio può essere un comune che gestisce l’anagrafe ed i servizi per i
+suoi cittadini e alcuni di questi richiedono la licenza di pesca (quindi solo alcuni cittadini  sono pescatori):
+</p>
+<img src="Basi%20di%20dati%20(database),%20Le%20gerarchie_files/db29.jfif" border="1">
+<p align="justify">La lettera <strong>p</strong> sta per <strong>parziale</strong>, ovvero ogni istanza dell’ entità padre può far parte oppure no di una entità figlia.
+La lettera <strong>o</strong> sta per <strong>overlapping</strong> (con sovrapposizioni) ed indica che ogni istanza dell’entità padre può far parte di una o più entità figlie.
+Questo concetto può risultare più semplice con il seguente esempio:
+</p>
+<img src="Basi%20di%20dati%20(database),%20Le%20gerarchie_files/db30.jfif" border="1">
+<p align="justify">In questo caso la lettera <strong>o</strong> indica 
+che possono esistere ingegneri meccanici,
+elettrici, e della logistica, ma anche sia  meccanici che elettrici o 
+meccanici e logistici. In sostanza le tre qualifiche non si escludono, 
+ogni ingegnere può assumere più qualifiche.
+Nelle gerarchie si ha una <strong>ereditarietà delle proprietà</strong>.
+Più precisamente le proprietà dell’entità padre non devono essere replicate sull’entità figlia in quanto questa le eredita.
+Quindi le proprietà dell’entità padre fanno parte del tipo dell’entità figlia.
+Nell’ esempio dei dipendenti il tipo di dipendente è: (matricola, cognome, nome, indirizzo, data_nascita, parametro)
+il tipo di esterno è: (matricola, cognome, nome,indirizzo, data_nascita, ore).
+Le gerarchie concettuali sono anche denominate <strong>gerarchie ISA.</strong></p>
+
+ <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+       <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+       <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+  
+
+<p align="center"><font size="-1">Tutto quanto riportato in questa pagina è a 
+  puro scopo informativo personale. Se non ti trovi in accordo con quanto riportato 
+  nella pagina, vuoi fare delle precisazioni, vuoi fare delle aggiunte o hai delle 
+  proposte e dei consigli da dare, puoi farlo mandando un <a href="mailto:dacrema@dacrema.com">email</a>. 
+  Ogni indicazione è fondamentale per la continua crescita del sito. </font></p> 
+
+
+
+</body></html>

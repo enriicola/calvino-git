@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it-it" dir="ltr" lang="it-it"><div class="cc-revoke cc-revoke-bottom cc-center cc-color-override--1375488563" style="">Preferenze cookies</div><div role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="cookieconsent:desc" class="cc-window cc-floating cc-type-opt-in cc-theme-block cc-opacity-100 cc-revoke-bottom cc-center cc-color-override--1375488563 cc-invisible" style="display: none;"><!--googleoff: all--><span class="cc-header">Cookies usati dal Sito</span>&nbsp;<span id="cookieconsent:desc" class="cc-message"><span class="cc-message-text">Usiamo C<strong>ookies tecnici</strong> per il funzionamento del sito e C<strong>ookies analitici</strong> per collezionare statistiche anonime. Usiamo anche C<strong>ookies profilanti di terze parti</strong> per offrire ai visitatori pubblicità personalizzata.   Rifiutando i cookies il sito non sarà visibile correttamente.</span></span><a aria-label="cookie policy" role="button" tabindex="0" class="cc-link cc-cookie" href="https://informatizzati.org/cookie-policy.html" target="_blank">Cookie policy</a> <a aria-label="privacy policy" role="button" tabindex="0" class="cc-link cc-privacy" href="https://informatizzati.org/privacy-policy.html" rel="noopener noreferrer noindex nofollow" target="_blank">Privacy policy</a><div class="cc-compliance cc-highlight"><a aria-label="deny cookies" role="button" tabindex="0" class="cc-btn cc-deny">Rifiuta</a><a aria-label="allow cookies" role="button" tabindex="0" class="cc-btn cc-allow">Consenti tutti i cookies</a></div><!--googleon: all--></div><head><script src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/osd.js"></script><script src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/ca-pub-4568326680731010.js"></script><script src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/show_ads_impl.js" id="google_shimpl"></script><script type="text/javascript" async="" src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/linkid.js"></script><script async="" src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/analytics.js"></script><script>var gdprConfigurationOptions = { complianceType: 'opt-in',
+																	  		  blockJoomlaSessionCookie: 0,
+																		  	  blockExternalCookiesDomains: 1,
+																			  allowedCookies: '_ga,_gid_gat',
+																			  blockCookieDefine: 0,
+																		  	  autoAcceptOnNextPage: 0,
+																		  	  revokable: 1,
+																		  	  lawByCountry: 0,
+																		  	  dismissOnScroll: 0,
+																		  	  dismissOnTimeout: 0,
+																		  	  containerSelector: 'html',
+																		  	  toolbarLayout: 'basic-header',
+																		  	  toolbarTheme: 'block',
+																		  	  revocableToolbarTheme: 'basic',
+																		  	  toolbarPosition: 'center',
+																			  revokePosition: 'revoke-bottom',
+																			  toolbarPositionmentType: 1,
+																			  popupBackground: '#000000',
+																			  popupText: '#ffffff',
+																			  popupLink: '#ffffff',
+																			  buttonBackground: '#ffffff',
+																			  buttonBorder: '#ffffff',
+																			  buttonText: '#000000',
+																			  highlightOpacity: '100',
+																			  highlightBackground: '#333333',
+																			  highlightBorder: '#ffffff',
+																			  highlightText: '#ffffff',
+																			  highlightDismissBackground: '#333333',
+																		  	  highlightDismissBorder: '#ffffff',
+																		 	  highlightDismissText: '#ffffff',
+																			  hideRevokableButton: 0,
+																			  headerText: 'Cookies usati dal Sito',
+																			  messageText: 'Usiamo C<strong>ookies tecnici</strong> per il funzionamento del sito e C<strong>ookies analitici</strong> per collezionare statistiche anonime. Usiamo anche C<strong>ookies profilanti di terze parti</strong> per offrire ai visitatori pubblicità personalizzata.   Rifiutando i cookies il sito non sarà visibile correttamente.',
+																			  denyMessageEnabled: 1, 
+																			  denyMessage: 'Hai rifiutato l\'uso dei cookies, per visualizzare correttamente il sito occorre abilitare i cookies.  <hr />  Usiamo C<strong>ookies tecnici</strong> per il funzionamento del sito e C<strong>ookies analitici</strong> per collezionare statistiche anonime. Usiamo anche C<strong>ookies profilanti di terze parti</strong> per offrire ai visitatori pubblicità personalizzata.   Rifiutando i cookies il sito non sarà visibile correttamente.',
+																			  dismissText: 'Ignora',
+																			  allowText: 'Consenti tutti i cookies',
+																			  denyText: 'Rifiuta',
+																			  cookiePolicyLinkText: 'Cookie policy',
+																			  cookiePolicyLink: '/cookie-policy.html',
+																			  cookiePolicyRevocableTabText: 'Preferenze cookies',
+																			  privacyPolicyLinkText: 'Privacy policy',
+																			  privacyPolicyLink: '/privacy-policy.html',
+																			  showLinks: 1,
+																			  blankLinks: '_blank',
+																			  autoOpenPrivacyPolicy: 0,
+																			  openAlwaysDeclined: 1,
+																			  cookieSettingsLabel: 'Cookie settings:',
+															  				  cookieSettingsDesc: 'Scegli il tipo di cookie che desideri disattivare facendo clic sulle caselle di controllo. Fare clic sul nome di una categoria per ulteriori informazioni sui cookie utilizzati.',
+																			  cookieCategory1Enable: 0,
+																			  cookieCategory1Name: 'Tecnici',
+																			  cookieCategory1Locked: 1,
+																			  cookieCategory2Enable: 0,
+																			  cookieCategory2Name: 'Preferences',
+																			  cookieCategory2Locked: 0,
+																			  cookieCategory3Enable: 0,
+																			  cookieCategory3Name: 'Statistici',
+																			  cookieCategory3Locked: 1,
+																			  cookieCategory4Enable: 0,
+																			  cookieCategory4Name: 'Marketing',
+																			  cookieCategory4Locked: 0,
+																			  debugMode: 0
+																		};</script>
+<!-- base href="https://informatizzati.org/informatica-generale/query-sql-capire-le-join.html" -->
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="keywords" content="query, sql, join, inner join, outer join">
+	<meta name="author" content="Federica">
+	<meta name="description" content="Spiegazione delle join attraverso gli insiemi con disegni ed esempi.">
+	<meta name="generator" content="Neomediatech">
+	<title>Query sql:capire le join - informatizzati.org</title>
+	<link href="https://informatizzati.org/templates/informatizzati/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/style.css" rel="stylesheet" type="text/css">
+	<link href="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+	<link href="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/bootstrap-extended.css" rel="stylesheet" type="text/css">
+	<link href="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/cookieconsent.css" rel="stylesheet" type="text/css">
+	<link href="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/jquery.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+div.mod_search95 input[type="search"]{ width:auto; }
+div.cc-revoke, div.cc-window{font-size:16px}
+div.cc-settings-label{font-size:14px}
+div.cc-window.cc-banner{padding:1em 1.8em}
+div.cc-window.cc-floating{padding:2em 1.8em}
+.cc-window.cc-floating {
+max-width: 44em;
+}
+.cc-center {
+margin-left: -334px;
+margin-top: -235px;
+}
+.cc-revoke, .cc-window {
+line-height: 2em;
+}
+
+@media (max-width:768px) {
+div.cc-revoke, div.cc-window {
+font-size: 13px;
+}
+.cc-window.cc-floating {
+max-width: 100%;
+}
+.cc-center {
+    top: auto;
+    left: auto;
+    margin-left: auto;
+    margin-top: auto;
+}
+}
+	</style>
+	<script src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/jcomments-v2.js" type="text/javascript"></script>
+	<script src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/ajax.js" type="text/javascript"></script>
+	<script src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/jquery_003.js" type="text/javascript"></script>
+	<script src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/jquery-noconflict.js" type="text/javascript"></script>
+	<script src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/jquery-migrate.js" type="text/javascript"></script>
+	<script src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/caption.js" type="text/javascript"></script>
+	<script src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/bootstrap.js" type="text/javascript"></script>
+	<!--[if lt IE 9]><script src="/media/system/js/html5fallback.js?79c35f77bce4f1dde4d8033d8d99f8e9" type="text/javascript"></script><![endif]-->
+	<script src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/jquery_002.js" type="text/javascript"></script>
+	<script src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/jquery.js" type="text/javascript" defer="defer"></script>
+	<script src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/cookieconsent.js" type="text/javascript" defer="defer"></script>
+	<script src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/init.js" type="text/javascript" defer="defer"></script>
+	<script type="text/javascript">
+jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});
+var gdprConfigurationOptions = { complianceType: 'opt-in',
+																	  		  blockJoomlaSessionCookie: 0,
+																		  	  blockExternalCookiesDomains: 1,
+																			  allowedCookies: '_ga,_gid_gat',
+																			  blockCookieDefine: 0,
+																		  	  autoAcceptOnNextPage: 0,
+																		  	  revokable: 1,
+																		  	  lawByCountry: 0,
+																		  	  dismissOnScroll: 0,
+																		  	  dismissOnTimeout: 0,
+																		  	  containerSelector: 'html',
+																		  	  toolbarLayout: 'basic-header',
+																		  	  toolbarTheme: 'block',
+																		  	  revocableToolbarTheme: 'basic',
+																		  	  toolbarPosition: 'center',
+																			  revokePosition: 'revoke-bottom',
+																			  toolbarPositionmentType: 1,
+																			  popupBackground: '#000000',
+																			  popupText: '#ffffff',
+																			  popupLink: '#ffffff',
+																			  buttonBackground: '#ffffff',
+																			  buttonBorder: '#ffffff',
+																			  buttonText: '#000000',
+																			  highlightOpacity: '100',
+																			  highlightBackground: '#333333',
+																			  highlightBorder: '#ffffff',
+																			  highlightText: '#ffffff',
+																			  highlightDismissBackground: '#333333',
+																		  	  highlightDismissBorder: '#ffffff',
+																		 	  highlightDismissText: '#ffffff',
+																			  hideRevokableButton: 0,
+																			  headerText: 'Cookies usati dal Sito',
+																			  messageText: 'Usiamo C<strong>ookies tecnici</strong> per il funzionamento del sito e C<strong>ookies analitici</strong> per collezionare statistiche anonime. Usiamo anche C<strong>ookies profilanti di terze parti</strong> per offrire ai visitatori pubblicità personalizzata.   Rifiutando i cookies il sito non sarà visibile correttamente.',
+																			  denyMessageEnabled: 1, 
+																			  denyMessage: 'Hai rifiutato l\'uso dei cookies, per visualizzare correttamente il sito occorre abilitare i cookies.  <hr />  Usiamo C<strong>ookies tecnici</strong> per il funzionamento del sito e C<strong>ookies analitici</strong> per collezionare statistiche anonime. Usiamo anche C<strong>ookies profilanti di terze parti</strong> per offrire ai visitatori pubblicità personalizzata.   Rifiutando i cookies il sito non sarà visibile correttamente.',
+																			  dismissText: 'Ignora',
+																			  allowText: 'Consenti tutti i cookies',
+																			  denyText: 'Rifiuta',
+																			  cookiePolicyLinkText: 'Cookie policy',
+																			  cookiePolicyLink: '/cookie-policy.html',
+																			  cookiePolicyRevocableTabText: 'Preferenze cookies',
+																			  privacyPolicyLinkText: 'Privacy policy',
+																			  privacyPolicyLink: '/privacy-policy.html',
+																			  showLinks: 1,
+																			  blankLinks: '_blank',
+																			  autoOpenPrivacyPolicy: 0,
+																			  openAlwaysDeclined: 1,
+																			  cookieSettingsLabel: 'Cookie settings:',
+															  				  cookieSettingsDesc: 'Scegli il tipo di cookie che desideri disattivare facendo clic sulle caselle di controllo. Fare clic sul nome di una categoria per ulteriori informazioni sui cookie utilizzati.',
+																			  cookieCategory1Enable: 0,
+																			  cookieCategory1Name: 'Tecnici',
+																			  cookieCategory1Locked: 1,
+																			  cookieCategory2Enable: 0,
+																			  cookieCategory2Name: 'Preferences',
+																			  cookieCategory2Locked: 0,
+																			  cookieCategory3Enable: 0,
+																			  cookieCategory3Name: 'Statistici',
+																			  cookieCategory3Locked: 1,
+																			  cookieCategory4Enable: 0,
+																			  cookieCategory4Name: 'Marketing',
+																			  cookieCategory4Locked: 0,
+																			  debugMode: 0
+																		};
+var gdpr_ajax_livesite='https://informatizzati.org/';
+var gdpr_enable_log_cookie_consent=1;
+var gdprFancyboxWidth=700;
+var gdprFancyboxHeight=800;
+var gdprCloseText='Chiudi';
+var gdprUseFancyboxLinks=1;
+	</script>
+
+	<link rel="stylesheet" href="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/template.css" type="text/css">
+	<!--<link rel="stylesheet" href="/templates/biazzi/css/print.css" type="text/css" media="Print" />-->
+
+<style></style><link rel="preload" href="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/integrator_002.js" as="script"><script type="text/javascript" src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/integrator_002.js"></script><link rel="preload" href="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/integrator.js" as="script"><script type="text/javascript" src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/integrator.js"></script><link rel="preload" href="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/show_ads_impl.js" as="script"></head>
+<body class="page_bg">
+<div id="contenitore">
+	<div id="left1"></div>
+	<div id="sopra"><ul class="nav menu_topmenu">
+<li class="item-110 default"><a href="https://informatizzati.org/"><img src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/bottone-home.jfif" alt="Home"></a></li><li class="item-92"><a href="https://informatizzati.org/linux.html"><img src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/bottone-linux.jfif" alt="Linux"></a></li><li class="item-93"><a href="https://informatizzati.org/windows.html"><img src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/bottone-win.jfif" alt="Windows"></a></li><li class="item-91 current active"><a href="https://informatizzati.org/informatica-generale.html"><img src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/bottone-altro.jfif" alt="Informatica generale"></a></li></ul>
+</div>
+	<div id="corpo">
+		<div id="sinistra">
+			<div id="sinistra2">
+						<div class="moduletable">
+						<ul class="nav menu">
+<li class="item-134"><a href="http://informatizzati.org/tutto.feed?type=rss"><img src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/livemarks.png" alt="Seguici con RSS"><span class="image-title">Seguici con RSS</span></a></li><li class="item-103"><a href="http://forum.voxpopulix.org/"><img src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/forum.png" alt="Scrivi sul Forum"><span class="image-title">Scrivi sul Forum</span></a></li></ul>
+		</div>
+			<div class="moduletable">
+						
+
+<div class="custom">
+	<div class="pareggia">&nbsp;</div>
+<p><a href="http://www.alexandriabooklibrary.org/" target="_blank"><img src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/abook-button-y2.png" alt="abook-button" width="136" height="52"></a> <a href="http://www.backupmx.it/" target="_blank"><img src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/backupmx-button.png" alt="backupmx-button" width="136" height="54"></a></p></div>
+		</div>
+			<div class="moduletable">
+						<div class="bannergroup">
+
+	<div class="banneritem">
+																																																																			<a href="https://informatizzati.org/component/banners/click/21.html" target="_blank" rel="noopener noreferrer" title="BackupMX 140">
+							<img src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/backupmx-140-blu.gif" alt="BackupMX 140">
+						</a>
+																<div class="clr"></div>
+	</div>
+
+</div>
+		</div>
+	
+						<div class="moduletable">
+						<ul class="nav menu_centrato">
+<li class="item-104"><a href="https://informatizzati.org/collegamenti-web.html">Collegamenti web</a></li><li class="item-102"><a href="https://informatizzati.org/tutto.html">Tutto</a></li><li class="item-99"><a href="https://informatizzati.org/login.html">Login</a></li><li class="item-221"><a href="https://informatizzati.org/generatore-di-password.html">Generatore di password</a></li><li class="item-197"><a href="https://informatizzati.org/cookie-policy.html">Cookie policy</a></li><li class="item-235"><a href="https://informatizzati.org/privacy-policy.html">Privacy policy</a></li></ul>
+		</div>
+			<div class="moduletable">
+							<h3>Il tuo IP:</h3>
+						 <a href="https://informatizzati.org/informatica-generale/il-tuo-indirizzo-ip.html">46.228.247.122</a>		</div>
+	
+						<div class="moduletable">
+							<h3>Etichette</h3>
+						<div class="tagspopular">
+	<ul>
+		<li>
+		<a href="https://informatizzati.org/tags/windows-xp.html">
+			windows xp</a>
+			</li>
+		<li>
+		<a href="https://informatizzati.org/tags/windows-vista.html">
+			windows vista</a>
+			</li>
+		<li>
+		<a href="https://informatizzati.org/tags/windows-7.html">
+			windows 7</a>
+			</li>
+		<li>
+		<a href="https://informatizzati.org/tags/windows.html">
+			windows</a>
+			</li>
+		<li>
+		<a href="https://informatizzati.org/tags/web.html">
+			web</a>
+			</li>
+		<li>
+		<a href="https://informatizzati.org/tags/vsphere.html">
+			vsphere</a>
+			</li>
+		<li>
+		<a href="https://informatizzati.org/tags/vmware.html">
+			vmware</a>
+			</li>
+		<li>
+		<a href="https://informatizzati.org/tags/vcsa.html">
+			vcsa</a>
+			</li>
+		<li>
+		<a href="https://informatizzati.org/tags/ubuntu.html">
+			ubuntu</a>
+			</li>
+		<li>
+		<a href="https://informatizzati.org/tags/tomcat.html">
+			tomcat</a>
+			</li>
+		<li>
+		<a href="https://informatizzati.org/tags/ssl.html">
+			ssl</a>
+			</li>
+		<li>
+		<a href="https://informatizzati.org/tags/ssh.html">
+			ssh</a>
+			</li>
+		<li>
+		<a href="https://informatizzati.org/tags/sql.html">
+			sql</a>
+			</li>
+		<li>
+		<a href="https://informatizzati.org/tags/shell.html">
+			shell</a>
+			</li>
+		<li>
+		<a href="https://informatizzati.org/tags/rete.html">
+			rete</a>
+			</li>
+		<li>
+		<a href="https://informatizzati.org/tags/programmi.html">
+			programmi</a>
+			</li>
+		<li>
+		<a href="https://informatizzati.org/tags/programmazione.html">
+			programmazione</a>
+			</li>
+		<li>
+		<a href="https://informatizzati.org/tags/prestashop.html">
+			prestashop</a>
+			</li>
+		<li>
+		<a href="https://informatizzati.org/tags/postgres.html">
+			postgres</a>
+			</li>
+		<li>
+		<a href="https://informatizzati.org/tags/postfix.html">
+			postfix</a>
+			</li>
+		<li>
+		<a href="https://informatizzati.org/tags/php.html">
+			php</a>
+			</li>
+		<li>
+		<a href="https://informatizzati.org/tags/openvpn.html">
+			openvpn</a>
+			</li>
+		<li>
+		<a href="https://informatizzati.org/tags/network2.html">
+			network2</a>
+			</li>
+		<li>
+		<a href="https://informatizzati.org/tags/mysql.html">
+			mysql</a>
+			</li>
+		<li>
+		<a href="https://informatizzati.org/tags/mailserver.html">
+			mailserver</a>
+			</li>
+		<li>
+		<a href="https://informatizzati.org/tags/mail.html">
+			mail</a>
+			</li>
+		<li>
+		<a href="https://informatizzati.org/tags/linux.html">
+			linux</a>
+			</li>
+		<li>
+		<a href="https://informatizzati.org/tags/ldap.html">
+			ldap</a>
+			</li>
+		<li>
+		<a href="https://informatizzati.org/tags/joomla.html">
+			joomla</a>
+			</li>
+		<li>
+		<a href="https://informatizzati.org/tags/ispconfig.html">
+			ispconfig</a>
+			</li>
+		<li>
+		<a href="https://informatizzati.org/tags/ipv6.html">
+			ipv6</a>
+			</li>
+		<li>
+		<a href="https://informatizzati.org/tags/html.html">
+			html</a>
+			</li>
+		<li>
+		<a href="https://informatizzati.org/tags/hardware.html">
+			hardware</a>
+			</li>
+		<li>
+		<a href="https://informatizzati.org/tags/guide.html">
+			guide</a>
+			</li>
+		<li>
+		<a href="https://informatizzati.org/tags/gestione-installazione.html">
+			gestione installazione</a>
+			</li>
+		<li>
+		<a href="https://informatizzati.org/tags/exim.html">
+			exim</a>
+			</li>
+		<li>
+		<a href="https://informatizzati.org/tags/esxi.html">
+			esxi</a>
+			</li>
+		<li>
+		<a href="https://informatizzati.org/tags/database.html">
+			database</a>
+			</li>
+		<li>
+		<a href="https://informatizzati.org/tags/css.html">
+			css</a>
+			</li>
+		<li>
+		<a href="https://informatizzati.org/tags/console.html">
+			console</a>
+			</li>
+		<li>
+		<a href="https://informatizzati.org/tags/comandi.html">
+			comandi</a>
+			</li>
+		<li>
+		<a href="https://informatizzati.org/tags/apache.html">
+			apache</a>
+			</li>
+		</ul>
+</div>
+		</div>
+	
+				
+			</div>
+		</div>
+		<div id="destra">
+			<div id="destra2">
+				<div class="all-dx">
+
+<div class="custom">
+	<div style="width: 468px;"><a href="https://backupmx.it/" target="_blank" title="MX secondario"><img src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/backupmx-468.png" alt="BackupMX" width="468" height="25"></a></div></div>
+<div class="search mod_search95">
+	<form action="/informatica-generale.html" method="post" class="form-inline">
+		<label for="mod-search-searchword95" class="element-invisible">Cerca...</label> <input name="searchword" id="mod-search-searchword95" maxlength="200" class="inputbox search-query input-medium" type="search" size="18" placeholder="Cerca nel sito..."> <button class="button btn btn-primary" onclick="this.form.searchword.focus();">Ok</button>		<input type="hidden" name="task" value="search">
+		<input type="hidden" name="option" value="com_search">
+		<input type="hidden" name="Itemid" value="137">
+	</form>
+</div>
+</div>
+				<div class="component">
+					<div id="system-message-container">
+	</div>
+
+					<div class="item-page">
+			<div class="page-header">
+		<h2>
+															Query sql:capire le join									</h2>
+	</div>
+									<div class="article-info muted">
+			<dl class="article-info">
+			<dt class="article-info-term"></dt>
+
+							<dd class="createdby">
+																Scritto da Federica									</dd>
+									
+			
+												<dd class="modified">
+						<span class="icon-calendar"></span> Ultima modifica: 27 Giugno 2009					</dd>
+								
+										</dl>
+		</div>
+	
+		<div class="content_rating" itemprop="aggregateRating" itemscope="" itemtype="https://schema.org/AggregateRating">
+	<p class="unseen element-invisible">
+		Valutazione attuale:&nbsp;<span itemprop="ratingValue">4</span>&nbsp;/&nbsp;<span itemprop="bestRating">5</span>		<meta itemprop="ratingCount" content="23">
+		<meta itemprop="worstRating" content="0">
+	</p>
+	<img src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/rating_star.png" alt="Stella attiva"><img src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/rating_star.png" alt="Stella attiva"><img src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/rating_star.png" alt="Stella attiva"><img src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/rating_star.png" alt="Stella attiva"><img src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/rating_star_blank.png" alt="Stella inattiva"></div>
+<form method="post" action="https://informatizzati.org/informatica-generale/query-sql-capire-le-join.html?hitcount=0" class="form-inline">
+	<span class="content_vote">
+		<label class="unseen element-invisible" for="content_vote_256">Valuta</label>
+		<select id="content_vote_256" name="user_rating">
+	<option value="1">valuta 1</option>
+	<option value="2">valuta 2</option>
+	<option value="3">valuta 3</option>
+	<option value="4">valuta 4</option>
+	<option value="5" selected="selected">valuta 5</option>
+</select>
+		&nbsp;<input class="btn btn-mini" type="submit" name="submit_vote" value="Valutazione">
+		<input type="hidden" name="task" value="article.vote">
+		<input type="hidden" name="hitcount" value="0">
+		<input type="hidden" name="url" value="https://informatizzati.org/informatica-generale/query-sql-capire-le-join.html?hitcount=0">
+		<input type="hidden" name="c42f9ef6459b204e4d0d54c5bd1c3c38" value="1">	</span>
+</form>
+								<p>Ti è mai capitato di voler unire due o più tabelle e non 
+ottenere il risultato sperato? In questo articolo cerchiamo di spiegare 
+le join con gli insiemi.</p>
+<p>Prendi due tabelle A e B</p>
+ 
+<table border="0">
+<tbody>
+<tr>
+<td valign="top">tabella A<br> 
+<table style="border-color: #000000; border-width: 1px; border-collapse: collapse;" border="1">
+<tbody>
+<tr>
+<th>id </th> <th>dipartimento <br> </th>
+</tr>
+<tr>
+<td>1</td>
+<td>architettura</td>
+</tr>
+<tr>
+<td>2</td>
+<td>economia</td>
+</tr>
+<tr>
+<td>3</td>
+<td>storia</td>
+</tr>
+<tr>
+<td>4</td>
+<td>scienze</td>
+</tr>
+<tr>
+<td>5</td>
+<td>filosofia</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td valign="top">tabella B 			  
+<table style="border: 1px solid #000000; border-collapse: collapse;" border="1">
+<tbody>
+<tr>
+<th>Nome </th><th> id_dipartimento</th>
+</tr>
+<tr>
+<td>Gino</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Pino</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Maria</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Rosa</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<p>e immagina che siano 2 insiemi</p>
+<table border="0">
+<tbody>
+<tr>
+<td valign="top"><img style="margin: 5px; vertical-align: top;" src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/insiemi.jfif" alt="insiemi" title="insiemi" width="250" height="152"></td>
+<td valign="top"><img style="margin: 5px; float: left;" src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/insiemi_aree.jfif" alt="insiemi_aree" title="insiemi_aree" width="250" height="152"> <br></td>
+</tr>
+</tbody>
+</table>
+<p>Intersecando i due insiemi otteniamo una zona condivisa (verde) e due
+ aree separate (gialla e azzurra), i diversi tipi di join si occupano di
+ selezionare queste aree estrapolando diversi gruppi di risultati.</p>
+<br>
+<p><span style="text-decoration: underline;"><strong>INNER JOIN</strong></span></p>
+<p>In base all'esistenza o meno della condizione (WHERE), la inner join 
+restituisce solo i record verificati esistenti in entrambe le tabelle, 
+tutte quelle righe che non hanno corrispondenza verranno escluse.</p>
+<p>Per fare un esempio pensiamo una query di questo tipo:</p>
+<p><span style="color: #636363;"><strong>SELECT * FROM tabellaA INNER JOIN tabellaB ON tabellaA.id_dipartimento = tabellaB.id </strong></span></p>
+<p>Il risultato è:</p>
+<table style="border: 1px solid #000000; border-collapse: collapse;" border="1">
+<tbody>
+<tr>
+<th>id <br> </th><th> dipartimento</th> <th>nome <br> </th><th> id_dipartimento</th>
+</tr>
+<tr>
+<td>1</td>
+<td>architettura</td>
+<td>Gino</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>economia</td>
+<td>Pino</td>
+<td>2</td>
+</tr>
+<tr>
+<td>3</td>
+<td>storia</td>
+<td>Maria</td>
+<td>3</td>
+</tr>
+<tr>
+<td>5</td>
+<td>filosofia</td>
+<td>Rosa</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<p>Il dipartimento di scienze non ha iscritti, quindi non è stato 
+considerato. Nel caso degli insiemi viene preso in considerazione solo 
+la porzione che si sovrappone.</p>
+<p><img style="margin: 5px; vertical-align: top;" src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/inner_join.jfif" alt="inner_join" title="inner_join" width="250" height="152"></p>
+<p>&nbsp;</p>
+<p><span style="text-decoration: underline;"><strong>OUTER JOIN</strong></span></p>
+<p>La outer join restituisce tutti i record che non corrispondono alle chiavi di ricerca. E' il contrario della inner join.</p>
+<p>Questo è solo un concetto, perchè verrebbero estratti solo risultati 
+non corrispondenti visualizzati con una serie di NULL. In realtà si usa 
+insieme a left o right diventando left outer join o right outer join.</p>
+<p>Nel caso degli insiemi viene selezionato tutto quello che sta al di fuori dall'intersecazione.</p>
+<p><img style="margin: 5px; vertical-align: top;" src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/outer_join.jfif" alt="outer_join" title="outer_join" width="250" height="152"></p>
+<p>&nbsp;</p>
+<p><strong><span style="text-decoration: underline;">LEFT OUTER JOIN</span> (RIGH</strong><strong>T OUTER JOIN</strong><strong>)</strong></p>
+<p>Questo tipo di selezione si ottiene mettendo insieme il concetto di 
+inner join e outer join. Il risultato che si ottiene è la selezione di 
+tutti i record della tabella A che corrispondono con la tabella B, più i
+ record della tabella A che non corrispondono. I record che non 
+corrispondono vengono valorizzati a NULL</p>
+<p>Esiste anche la right outer join ma normalmente non si usa e per 
+ottenere lo stesso risultato si cambia l'ordine delle tabelle. A volte è
+ possibile omettere il termine OUTER, quindi rimane semplicemente LEFT o
+ OUTER JOIN</p>
+<p>Vediamo l'esempio</p>
+<p><strong><span style="color: #636363;" class="syntax"><span class="syntax_alpha syntax_alpha_reservedWord">SELECT</span> <span class="syntax_punct">*</span> <span class="syntax_alpha syntax_alpha_reservedWord">FROM</span> <span class="syntax_alpha syntax_alpha_identifier">tabellaA</span><span class="syntax_alpha syntax_alpha_reservedWord"> LEFT</span> <span class="syntax_alpha syntax_alpha_reservedWord">JOIN</span> <span class="syntax_alpha syntax_alpha_identifier">TabellaB</span> <span class="syntax_alpha syntax_alpha_reservedWord">ON</span> <span class="syntax_alpha syntax_alpha_identifier">tabellaA</span><span class="syntax_punct syntax_punct_qualifier">.</span><span class="syntax_alpha syntax_alpha_identifier">id_dipartimenti</span> <span class="syntax_punct">=</span> <span class="syntax_alpha syntax_alpha_identifier">tabellaB</span><span class="syntax_punct syntax_punct_qualifier">.</span><span class="syntax_alpha syntax_alpha_identifier">id</span></span></strong></p>
+<p>Il risultato è:</p>
+<table style="border: 1px solid #000000; border-collapse: collapse;" border="1">
+<tbody>
+<tr>
+<th>id <br> </th> <th>dipartimento <br> </th> <th> nome</th> <th> id_dipartimento</th>
+</tr>
+<tr>
+<td>1</td>
+<td>architettura</td>
+<td>Gino</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>economia</td>
+<td>Pino</td>
+<td>2</td>
+</tr>
+<tr>
+<td>3</td>
+<td>storia</td>
+<td>Maria</td>
+<td>3</td>
+</tr>
+<tr>
+<td>4</td>
+<td>scienze</td>
+<td>NULL</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td>5</td>
+<td>filosofia</td>
+<td>Rosa</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<p>In questo caso anche la riga "scienze" è stata inserita,ma dal 
+momento che non ci sono iscritti viene inserito NULL nel campi non 
+corrispondenti.</p>
+<p>Il disegno con gli insiemi appare così:</p>
+<p><img style="margin: 5px; vertical-align: top;" src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/left_join.jfif" alt="left_join" title="left_join" width="250" height="152"></p>
+		                
+                	<div class="tags">
+		<div><strong>Argomenti correlati:</strong></div>
+																	<span class="tag-21 tag-list0">
+					<a href="https://informatizzati.org/tags/database.html" class="label label-info">
+						database					</a>
+				</span>&nbsp;
+							<br><br>
+		<script async="" src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/adsbygoogle.js"></script>
+		<!-- inpage links 728x15 -->
+		<ins class="adsbygoogle" style="display:inline-block;width:728px;height:15px" data-ad-client="ca-pub-4568326680731010" data-ad-slot="7037340394" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:15px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:15px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0px;width:728px;height:15px;" width="728" height="15" frameborder="0"></iframe></ins></ins></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+	</div>
+        						<script type="text/javascript">
+<!--
+var jcomments=new JComments(256, 'com_content','/component/jcomments/');
+jcomments.setList('comments-list');
+//-->
+</script>
+<div id="jc">
+<div id="comments"><h4>Commenti <a class="refresh" href="#" title="Aggiorna elenco commenti" onclick="jcomments.showPage(256,'com_content',0);return false;">&nbsp;</a></h4>
+<div id="comments-list" class="comments-list">
+	<div class="even" id="comment-item-222"><div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-222">
+<a href="#" class="vote-good" title="Ottimo commento!" onclick="jcomments.voteComment(222, 1);return false;"></a><a href="#" class="vote-poor" title="Commento scarso!" onclick="jcomments.voteComment(222, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="https://informatizzati.org/informatica-generale/query-sql-capire-le-join.html#comment-222" id="comment-222">#1</a>
+<span class="comment-title">RE: Query sql:capire le join</span> — 
+<span class="comment-author">Silvano</span>
+<span class="comment-date">2018-08-10 07:53</span>
+<div class="comment-body" id="comment-body-222">Grazie un milione per questo articolo.<br>Mi avete salvato la vita! adesso vado ad ubriacarmi.</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.quoteComment(222); return false;">Citazione</a>
+</span>
+</div><div class="clear"></div>
+</div>
+</div>
+	<div class="odd" id="comment-item-223"><div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-223">
+<a href="#" class="vote-good" title="Ottimo commento!" onclick="jcomments.voteComment(223, 1);return false;"></a><a href="#" class="vote-poor" title="Commento scarso!" onclick="jcomments.voteComment(223, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="https://informatizzati.org/informatica-generale/query-sql-capire-le-join.html#comment-223" id="comment-223">#2</a>
+<span class="comment-title">RE: Query sql:capire le join</span> — 
+<span class="comment-author">Dario</span>
+<span class="comment-date">2018-08-10 09:26</span>
+<div class="comment-body" id="comment-body-223"> <img src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/lol.gif" alt=":lol:">  <img src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/lol.gif" alt=":lol:">  <img src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/lol.gif" alt=":lol:">  Grazie a te Silvano!!! Mi sto rotolando dalle risate ancora adesso!!!!<br>Dario.<br><span class="quote">Citazione Silvano:</span><blockquote><div>Grazie un milione per questo articolo.<br>Mi avete salvato la vita! adesso vado ad ubriacarmi.</div></blockquote></div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.quoteComment(223); return false;">Citazione</a>
+</span>
+</div><div class="clear"></div>
+</div>
+</div>
+	<div class="even" id="comment-item-224"><div class="rbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-224">
+<a href="#" class="vote-good" title="Ottimo commento!" onclick="jcomments.voteComment(224, 1);return false;"></a><a href="#" class="vote-poor" title="Commento scarso!" onclick="jcomments.voteComment(224, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="https://informatizzati.org/informatica-generale/query-sql-capire-le-join.html#comment-224" id="comment-224">#3</a>
+<span class="comment-title">RE: Query sql:capire le join</span> — 
+<span class="comment-author">Wolverine</span>
+<span class="comment-date">2018-10-08 17:28</span>
+<div class="comment-body" id="comment-body-224">...peccato che le query siano sbagliate....ta<span style="font-size:0;padding:0;margin:0;"> </span>bellaA.id_dipar<span style="font-size:0;padding:0;margin:0;"> </span>timenti e tabellaB.id non esistono</div>
+<span class="comments-buttons">
+<a href="#" onclick="jcomments.quoteComment(224); return false;">Citazione</a>
+</span>
+</div><div class="clear"></div>
+</div>
+</div>
+</div>
+<div id="comments-list-footer"><a class="refresh" href="#" title="Aggiorna elenco commenti" onclick="jcomments.showPage(256,'com_content',0);return false;">Aggiorna elenco commenti</a></div>
+</div>
+<div id="comments-form-link">
+<a id="addcomments" class="showform" href="#addcomments" onclick="jcomments.showForm(256,'com_content', 'comments-form-link'); return false;">Aggiungi commento</a>
+</div>
+<div id="comments-footer" align="center"><a href="http://www.joomlatune.com/" title="JComments" target="_blank">JComments</a></div>
+<script type="text/javascript">
+<!--
+jcomments.setAntiCache(1,0,1);
+//-->
+</script> 
+</div> </div>
+
+							<div class="moduletable-related">
+							<h3>Potrebbe interessarti anche...</h3>
+						<ul class="relateditems-related">
+<li>
+	<a href="https://informatizzati.org/linux/aggiornamento-database-da-mysql-41-a-mysql-5.html">
+				Aggiornamento database da mysql 4.1 a mysql 5</a>
+</li>
+<li>
+	<a href="https://informatizzati.org/informatica-generale/visualizzare-immagine-salvata-nel-database-php-mysql.html">
+				Visualizzare immagine salvata nel database (php, mysql)</a>
+</li>
+<li>
+	<a href="https://informatizzati.org/linux/htaccess-e-autenticazione-mysql.html">
+				htaccess e Autenticazione MySQL</a>
+</li>
+<li>
+	<a href="https://informatizzati.org/linux/driver-jdbc-per-postgres.html">
+				Driver jdbc per postgres</a>
+</li>
+<li>
+	<a href="https://informatizzati.org/linux/installazione-postgresql.html">
+				Installazione Postgresql</a>
+</li>
+</ul>
+		</div>
+	
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="pareggia">
+		<div id="credit">
+
+<div class="custom">
+	<div align="center">By&nbsp; <a href="https://informatizzati.org/component/contact/contact/12-contatti/1.html?Itemid=110">Dario</a>&nbsp; &amp;&nbsp; <a href="https://informatizzati.org/component/contact/contact/12-contatti/2.html?Itemid=110">Federica</a></div></div>
+</div>
+		<div id="hosting"><a href="http://www.neomediatech.it/" target="_blank">Hosting Neomediatech</a></div>
+	</div>
+	<div class="pareggia"></div>
+</div>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-641578-1', 'informatizzati.org');
+ga('require', 'displayfeatures');
+ga('require', 'linkid', 'linkid.js');
+ga('set', 'anonymizeIP', true);
+ga('send', 'pageview');
+
+
+window.onload = function() {
+  var a = document.getElementsByTagName('a');
+  for (i = 0; i < a.length; i++) {
+    if (a[i].hostname === location.hostname) {
+      if (a[i].href.match(/^http:\/\/.+.(link|email|7z|aac|avi|csv|doc|exe|flv|gif|gz|jpe?g|js|mp(3|4|e?g)|mov|pdf|phps|png|ppt|rar|sit|tar|torrent|txt|wma|wmv|xls|xml|zip)$/i)) {
+        a[i].setAttribute('target', '_blank');
+        a[i].onclick = function() {
+          ga('send', 'event', 'Downloads', 'Click', this.getAttribute('href'));
+        };
+      }
+    }
+  }
+}
+</script> 
+
+<script src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/ga.js"></script>
+<!--<script type="text/javascript">var nibirumail_advice_text = 'Questo sito utilizza cookies per offrire un\'esperienza di navigazione migliore. Entrando nel nostro sito, si accetta l\'impiego di cookies in accordo con la nostra <a href="/privacy.html" target="_blank"><i>cookie policy</i></a>. <a href="javascript:;" class="nibirumail_agreement btn btn-primary" style="margin-left: 10px;border: 1px solid #fff; padding:5px;">X Chiudi</a>';</script>
+<script type="text/javascript" src="/templates/informatizzati/js/nibirumail.cookie.min.js"></script>-->
+
+
+
+<iframe id="google_osd_static_frame_1945920919220" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;"></iframe></body><iframe id="google_esf" name="google_esf" src="Query%20sql%20capire%20le%20join%20-%20informatizzati.org_files/zrt_lookup.htm" style="display: none;" data-ad-client="ca-pub-4568326680731010"></iframe></html>

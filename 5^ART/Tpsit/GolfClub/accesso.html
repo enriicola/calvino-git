@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GolfClub</title>
+<link rel="shortcut icon" type="image/x-icon" href="img/icon.png" />
+<meta charset="utf-8">
+<link href="style.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<section id="accesso">
+    <p align="center"> <font face="magneto" size="10"> V o l k s w a g e n </font> </p> 
+	<p align="center"> <font face="magneto" size="10"> Golf Club </font> </p>
+	<p align="center"> <font face="magneto" size="5"> Italia </font> </p> 
+	
+		<div id="box">
+		<form id="log" action="login.php" method="POST">
+			<label for="email"><h4>Email</h4></label>
+			<input type="text" placeholder="Inserisci la tua mail..." name="email" required>
+			<label for="psw"><h4>Password</h4></label>
+			<input type="password" placeholder="Inserisci la tua password..." name="psw" required>
+			<br><br><br>
+			<input type="submit" value="Accedi" onclick="controlli()">
+			<label for="red"><h4></h4></label>
+			<button id="red" name="red" type="button" onclick="registrati()">Sei nuovo? Registrati!</button>
+		</form>
+		</div>
+</section>
+<section id="registrazione">
+	<p align="center"> <font face="magneto" size="10"> V o l k s w a g e n </font> </p> 
+	<p align="center"> <font face="magneto" size="10"> Golf Club </font> </p>
+	<h1 align="center" font face="magneto">Unisciti alla community migliore di sempre!</h1>
+		<div id="boxsu">
+		<form id="log" action="signup.php" method="POST">
+			<label for="nomeutente"><h4>Nome Utente</h4></label>
+			<input type="text" placeholder="Scegli un nickname!" name="nomeutente" required>
+			<label for="email"><h4>Email</h4></label>
+			<input type="text" placeholder="Digita la tua mail..." name="email" required>
+			<label for="psw"><h4>Password</h4></label>
+			<input type="password" placeholder="Scegli una password..." name="psw" required>
+			<label for="psw1"><h4>Conferma Password</h4></label>
+			<input type="password" placeholder="Conferma la password..." name="psw1" required>
+			<br><br><br>
+			<input type="submit" value="Clicca per registrarti!" onclick="controlli()">
+			<label for="red"><h4></h4></label>
+			<button id="red" name="red" type="button" onclick="accedi()">Hai già un account? Accedi!</button>
+		</form>
+		</div>
+</section>
+</body>
+</html>

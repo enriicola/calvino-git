@@ -1,0 +1,141 @@
+<html>
+ <head>
+ </head>
+ <body>
+    <canvas id="myCanvas" width="2500" height="1300" style="border:5px solid 	#000000;"></canvas>
+	<script type="text/javascript">
+	
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+
+ctx.fillStyle = "red";
+ctx.fillRect(0,0,2500,100);
+
+ctx.fillStyle = "white";
+ctx.fillRect(0,100,2500,200);
+
+ctx.fillStyle = "red";
+ctx.fillRect(0,200,2500,300);
+
+ctx.fillStyle = "white";
+ctx.fillRect(0,300,2500,400);
+
+ctx.fillStyle = "red";
+ctx.fillRect(0,400,2500,500);
+	
+ctx.fillStyle = "white";
+ctx.fillRect(0,500,2500,600);
+
+ctx.fillStyle = "red";
+ctx.fillRect(0,600,2500,700);
+
+ctx.fillStyle = "white";
+ctx.fillRect(0,700,2500,800);
+
+ctx.fillStyle = "red";
+ctx.fillRect(0,800,2500,900);
+
+ctx.fillStyle = "white";
+ctx.fillRect(0,900,2500,1000);
+
+ctx.fillStyle = "red";
+ctx.fillRect(0,1000,2500,1100);
+
+ctx.fillStyle = "white";
+ctx.fillRect(0,1100,2500,1200);
+
+ctx.fillStyle = "red";
+ctx.fillRect(0,1200,2500,1300);
+
+ctx.fillStyle = "#00008b";
+ctx.fillRect(0,0,1100,700);
+ </script>	
+	
+
+<p><img id="stella" width="0" height="0" src="foto stella.png" alt="stella">
+</p>
+
+
+ <script>
+window.onload = function() {
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    var img = document.getElementById("stella");
+for(y=0;y<11;y++){
+switch(y){
+  case 0:
+    for(x=0;x<5;x++){
+    ctx.drawImage(img, 100*y,140*x);
+     }
+	 break;
+   case 1:
+    for(x=0;x<8;x++){
+    ctx.drawImage(img, 100*y,70*(x+1));
+	 x++;
+     }
+	 break;
+   case 2:
+    for(x=0;x<5;x++){
+    ctx.drawImage(img, 100*y,140*x);
+     }
+	 break;
+   case 3:
+    for(x=0;x<8;x++){
+    ctx.drawImage(img, 100*y,70*(x+1));
+	 x++;
+     }
+	 break;
+   case 4:
+    for(x=0;x<5;x++){
+    ctx.drawImage(img, 100*y,140*x);
+     }
+	 break;
+   case 5:
+    for(x=0;x<8;x++){
+    ctx.drawImage(img, 100*y,70*(x+1));
+	 x++;
+     }
+	 break;
+    case 6:
+    for(x=0;x<5;x++){
+    ctx.drawImage(img, 100*y,140*x);
+     }
+	 break;
+   case 7:
+    for(x=0;x<8;x++){
+    ctx.drawImage(img, 100*y,70*(x+1));
+	 x++;
+     }
+	 break;
+     case 8:
+    for(x=0;x<5;x++){
+    ctx.drawImage(img, 100*y,140*x);
+     }
+	 break;
+   case 9:
+    for(x=0;x<8;x++){
+    ctx.drawImage(img, 100*y,70*(x+1));
+	 x++;
+     }
+	 break;
+	  case 10:
+    for(x=0;x<5;x++){
+    ctx.drawImage(img, 100*y,140*x);
+     }
+	 break;
+   case 11:
+    for(x=0;x<8;x++){
+    ctx.drawImage(img, 100*y,70*(x+1));
+	 x++;
+     }
+	 break;
+}
+}
+};
+
+	</script>
+
+  
+ </body>
+</html>
+

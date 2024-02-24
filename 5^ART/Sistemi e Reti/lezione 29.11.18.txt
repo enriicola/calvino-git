@@ -1,0 +1,6 @@
+-Byod (bring your device)
+-legge che obbliga i possessori di connetività non privati a mantenere un log che dice quel dispositivo, in quel giorno, si è
+ collegato ad internet, cosa ha cercato, o per lo meno per quanto è stato collegato
+-wi-fi più potente  che supporti almeno 100 dispositivi connessi 
+-gestione dei sistemi di accounting 
+-zentyal (piattaforma server basata su ubuntu alla quale hanno appoggiato sopra tutta l'amministrazione web  

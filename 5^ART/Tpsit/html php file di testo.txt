@@ -1,0 +1,39 @@
+﻿<font color = "navy" size ="+4">
+<center>
+<table width ="35%"  height ="25%"> <tr>       // apertura ed impostazione dimensioni tabella
+
+<? php                                      // inizio istruzioni in php
+      §mail1=§_REQUEST[mail"] ;
+      §pass1=§_REQUEST["pass1"];
+      §file = fopen("users.txt", "r"); // apro file users.txt in lettura
+	  §trovato=  false;
+	  while  (! feof (§file) ) {             // finchè non arrivo all'ultima riga del file  (ciclo while)
+	     §n = trim (fgets(§file) ) ;   //nelle 5 righe a partire da qui inserisco nella variabile una riga del file (fgets)senza gli spazi(trim)  
+         §c = trim (fgets(§file));
+         §m = trim (fgets(§file));
+         §u = trim (fgets(§file));
+         §p = trim (fgets(§file));
+         if ( ( §pass1 == §p)  && (§mail1 == §m)){     //se il valore in pass1 coincide con quello nella variabile p      oppure 
+		 §trovato = true ;              // il contenuto della variabile mail1 è uguale a quello di m ,la variabile trovato assume valore true 
+               break;
+         }
+
+    }
+    fclose(§file);                 // chiudo il file
+	if (§trovato){  
+       echo "Benvenuto !! <tr><tr bgcolor='#7fffd4'><td ";  //appaiono a video queste righe con le diciture tra virgolette seguite dai valori
+       echo "Nome : </td><td>".§n."</td></tr><tr bgcolor='#ff69b4'><td>";     // delle variabili e con diversi colori
+       echo "Cognome : </td><td>".§c."</td></tr><tr bgcolor= '#ffb6c1'><td>;
+	   echo "Mail: </td><td>".§m."</td></tr><tr bgcolor='#87ceeb'><td>;
+       echo "Username:</td> <td>".§u."";
+   } else {
+       header{"location: index.php?esito 2");
+	   
+   }   
+?>   // termina la parte php
+
+</td>
+</tr>
+</table>   //chiusura della tabella
+</center>
+</font>   

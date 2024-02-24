@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.8.3
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Creato il: Mar 21, 2019 alle 07:41
+- Versione del server: 10.1.36-MariaDB
+- Versione PHP: 7.2.11
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="gr3" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="articoli">
+                CREATE TABLE `articoli` (
+                  `titolo` varchar(30) NOT NULL,
+                  `testo` text NOT NULL,
+                  `tempo` datetime NOT NULL,
+                  `utente` int(32) NOT NULL,
+                  `totlike` int(100) NOT NULL
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="commenti">
+                CREATE TABLE `commenti` (
+                  `tipo` varchar(8) NOT NULL,
+                  `testo` text NOT NULL,
+                  `articolo` varchar(20) NOT NULL,
+                  `data` varchar(20) NOT NULL,
+                  `utente` varchar(20) NOT NULL,
+                  `totlike` int(100) DEFAULT NULL
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="golfisti">
+                CREATE TABLE `golfisti` (
+                  `email` varchar(20) NOT NULL,
+                  `password` varchar(32) NOT NULL,
+                  `nickname` varchar(10) NOT NULL,
+                  `totcommenti` int(100) NOT NULL
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="immagini">
+                CREATE TABLE `immagini` (
+                  `url` varchar(50) NOT NULL
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'gr3'
+    -->
+    <database name="gr3">
+        <!-- Tabella articoli -->
+        <!-- Tabella commenti -->
+        <!-- Tabella golfisti -->
+        <table name="golfisti">
+            <column name="email">z@z.z</column>
+            <column name="password">z</column>
+            <column name="nickname">z</column>
+            <column name="totcommenti">0</column>
+        </table>
+        <!-- Tabella immagini -->
+    </database>
+</pma_xml_export>

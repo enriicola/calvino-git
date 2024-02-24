@@ -1,0 +1,11 @@
+-ftp lavora fondamentalmente su due porte (21-22)
+-filezilla (uno dei più semplici e leggeri, multipiattaforma)
+-portableapps.com
+-faccio 'nuovo sito'
+-in host inserisco l'indirizzo IP del sito a cui faccio server
+-in port inserisco il numero della porta necessaria, in questo caso FTP (21 o 22)
+-172.31.249.41/phpmyadmin (con webmin)
+-root / 5ciiGr0
+-fare per il 7/1/19: due siti(due cartelle)
+	1. login
+	2. registrazione
