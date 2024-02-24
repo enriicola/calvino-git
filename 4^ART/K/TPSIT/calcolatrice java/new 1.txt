@@ -1,0 +1,45 @@
+<!doctype HTML>
+<html>
+<head>
+</head>
+<body>
+<form class="calcolatrice">
+            <div class="bloc">
+                <span>JavaScript Calculator</span>
+                <input type="text" autocomplete="off" name="display" id="display" class="display-calc">
+            </div>
+            <div class="bloc">
+                <div class="bloc">
+                    <input type="submit" name="num1" value="1" class="calc">
+                    <input type="submit" name="num2" value="2" class="calc">
+                    <input type="submit" name="num3" value="3" class="calc">
+                    <input type="submit" name="divi" value="/" class="calc">
+                </div>
+                <div class="bloc">
+                    <input type="submit" name="num4" value="4" class="calc">
+                    <input type="submit" name="num5" value="5" class="calc">
+                    <input type="submit" name="num6" value="6" class="calc">
+                    <input type="submit" name="molt" value="*" class="calc">
+                </div>
+                <div class="bloc">
+                    <input type="submit" name="num7" value="7" class="calc">
+                    <input type="submit" name="num8" value="8" class="calc">
+                    <input type="submit" name="num9" value="9" class="calc">
+                    <input type="submit" name="sott" value="-" class="calc">
+                </div>
+                <div class="bloc">
+                    <input type="submit" name="canc" value="C" class="calc">
+                    <input type="submit" name="num0" value="0" class="calc">
+                    <input type="submit" name="virg" value="." class="calc">
+                    <input type="submit" name="addi" value="+" class="calc">
+                </div>
+                <div class="bloc">
+                    <button class="calcola calc">=</button>
+                </div>
+            </div>
+        </form>
+		
+</body>
+		
+		
+</html>

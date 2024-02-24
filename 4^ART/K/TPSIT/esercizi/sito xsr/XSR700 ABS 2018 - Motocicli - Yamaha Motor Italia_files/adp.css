@@ -1,0 +1,89 @@
+.adp-warnbox {
+    margin: 5px 0 3px;
+}
+.warnbox-content {
+    background: none repeat scroll 0 0 #FFF1A8;
+    padding: 5px 6px;
+}
+.warnbox-c1, .warnbox-c2 {
+    background: none repeat scroll 0 0 #FFF1A8;
+    font-size: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.warnbox-c1 {
+    margin: 0 2px;
+}
+.warnbox-c2 {
+    margin: 0 1px;
+}
+.adp-list {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CDCDCD;
+    cursor: pointer;
+    padding: 4px;
+}
+.adp-fullwidth {
+    width: 100%;
+}
+.adp-listsel {
+    background: none repeat scroll 0 0 #EEEEEE;
+    text-decoration: none;
+}
+.adp-listheader {
+    padding: 4px;
+}
+.adp-placemark {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid silver;
+    color: #000000;
+    cursor: pointer;
+    margin: 10px 0;
+    vertical-align: middle;
+}
+.adp-details, .adp-legal {
+    color: #676767;
+}
+.adp-summary {
+    padding: 0 3px 3px;
+}
+.adp-step, .adp-substep {
+    border-top: 1px solid #CDCDCD;
+    margin: 0;
+    padding: 0.3em 3px;
+    vertical-align: top;
+}
+.adp-list img, .adp-substep img {
+    height: 15px;
+    margin-right: 3px;
+    position: relative;
+    top: 2px;
+    width: 15px;
+}
+.adp-distance {
+    white-space: nowrap;
+}
+.adp-step, .adp-text {
+    width: 100%;
+}
+.adp-directions {
+    border-collapse: collapse;
+    cursor: pointer;
+}
+.adp-list .gm-arrow {
+    height: 9px;
+    margin: 5px 0 3px;
+    width: 8px;
+}
+.adp-agencies {
+    font-size: 80%;
+    margin: 5px 0;
+}
+.adp-summary-duration {
+    float: right;
+    margin-left: 7px;
+    white-space: nowrap;
+}
+.adp-substep .gm-line {
+    margin-right: 4px;
+}

@@ -1,0 +1,67 @@
+body{
+	background-color:black;
+	font-family:georgia;
+    color: white;
+	/*vlink: white;*/
+}
+
+.center{
+	text-align: center;
+	margin: auto;
+    width: 50%;
+	
+}
+
+input[name="parola"]{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width:50%;
+	
+}
+
+input[type=CONSONANTI]{
+	/*width:100%;*/
+	background-color:lightblue;
+	color:white;
+	padding:20px 60px;
+	margin:8 px o;
+	border:none;
+	border-radius:40px;
+	cursor:pointer;
+	
+}
+
+input[type=button]{
+	width:50%;
+	background-color:dodgerblue;
+	color:white;
+	padding:20px 60px;
+	margin:8 px o;
+	border:none;
+	border-radius:40px;
+	cursor:pointer;
+	
+} 
+
+input[type=text], select {
+	width:50%;
+	padding:20px 60px;
+	margin:8 px o;
+	display:inline-block;
+	border:5px solid #CCC;
+	border-radius:40px;
+	box-sizing:border-box;
+	
+}
+
+input[type=reset]{
+	width:50%;
+	background-color:red;
+	color:white;
+	padding:20px 60px;
+	margin:8 px o;
+	border:none;
+	border-radius:40px;
+	cursor:pointer;
+}

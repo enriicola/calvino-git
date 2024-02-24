@@ -1,0 +1,243 @@
+import java.lang.*;
+import java.util.*;
+import java.awt.*;
+import java.awt.event.*;
+
+
+
+class GestoreFinetra implements WindowListener
+{
+
+public void windowOpened (WindowEvent e) {}
+public void windowClosing (WindowEvent e) {System.exit(0);}
+public void windowActivated (WindowEvent e) {}
+public void windowClosed (WindowEvent e) {}
+public void windowDeactivated (WindowEvent e) {}
+public void windowDeiconified (WindowEvent e) {}
+public void windowIconified (WindowEvent e) {}
+}
+
+
+class Area extends Canvas
+{
+int mod=0,n,i,l=1,perso=0,vinto=0;
+int coord[][]= new int[600][2];
+char testo[]=new char[600];
+int matr[][]=new int[11][11];//Matrice del gioco conterra' posizione bombe
+
+
+public void paint (Graphics g)
+{
+Color cCampo = new Color(152,251,152);
+Color cBombe = new Color(255,127,0);
+Color cPerso = new Color(139,126,102);
+
+int cx,cy=35,j;
+
+for(j=0;j<9;j++){
+for(i=0;i<9;i++)
+{
+g.setColor(cCampo);
+g.fillRect(21+(i*30),21+(j*30),29,29);
+}
+}g.setColor(Color.black);
+
+
+
+for(i=0;i<10;i++)
+{
+//Righe orizzonatali -----
+g.drawLine(20,20+i*30,290,20+i*30);
+
+//Righe verticali ||||||
+g.drawLine(20+i*30,20,20+i*30,290);
+}
+
+
+if(mod==1)
+{
+//Scrivi la stringa t nelle posizioni indicate dalla matrice
+for(i=0;i<this.n;i++){String t = new String(""+testo[i]);g.drawString(t,this.coord[i][0],this.coord[i][1]);}
+}
+if(perso==1){
+//Segnalo i bombe
+for (int i=1;i<10;i++)
+{
+for(j=1;j<10;j++)
+{
+if(matr[i][j]==1||matr[i][j]==3)
+{
+cx=20+(j-1)*30;
+cy=20+(i-1)*30;
+if(matr[i][j]!=3)g.setColor(cBombe);
+else g.setColor(Color.BLACK);
+g.fillRect(cx+1,cy+1,29,29);
+
+}
+}
+}
+
+
+
+g.setColor(cPerso);
+g.setFont(new java.awt.Font("Serif", 0, 69));g.drawString("Hai perso !!!!",30,160);}
+else if(vinto==1){g.setColor(Color.RED);g.setFont(new java.awt.Font("Serif", 0, 69));g.drawString("Hai vinto !!!!",30,160);}
+
+
+
+
+}
+
+
+
+public void scrivi(char testo[],int coord[][],int n)
+{
+mod=1;
+this.coord=coord;
+this.testo=testo;
+this.n=n;
+l++;
+}
+public void perso(int matr[][]){perso=1;this.matr=matr;this.repaint();}
+public void vinto(){vinto=1;}
+
+
+}
+
+
+class Mouse extends Frame implements MouseListener
+{
+TextArea ta;
+Area cv;
+int matr[][]=new int[11][11];//Matrice del gioco conterra' posizione bombe
+int coord[][]= new int[600][2];//Coordinate da passare al metodo scrivi
+int bombe=6,n,	l=1,perso=0,caselle=(9*9)-bombe;
+char testo[]=new char[600];
+public Mouse()
+{
+
+//Azzero la matrice
+for (int i=0;i<11;i++)for(int j=0;j<11;j++)matr[i][j]=0;
+n=bombe;
+//Inserisco le bombe
+int x,y;
+while(bombe>0)
+{
+x=(int)(Math.random()*9)+1;
+y=(int)(Math.random()*9)+1;
+if(matr[x][y]==0){matr[x][y]=1;bombe--;}
+}
+//stampo per prova la matrice contente posizione bombe
+//	for (int i=1;i<10;i++){for(int j=1;j<10;j++)System.out.print(matr[i][j]+" ");System.out.println();}
+
+setSize(350,768);
+setLayout(new GridLayout(2,1));
+cv=new Area();
+cv.addMouseListener(this);
+add(cv);
+ta = new TextArea(20, 20);
+add(ta);
+}
+
+//Se clicco il tasto del mouse
+public void mouseClicked(MouseEvent e)
+{
+
+int t,ct,z,xmouse=e.getX(),ymouse=e.getY(),k,cx,cy,bvicine;
+if(perso==0)
+{
+if(caselle>0)
+{
+//Se ho cliccato dentro la griglia
+if(!(xmouse>=290||xmouse<=20||ymouse>=290||ymouse<=20))
+{
+t=20;
+ct=0;
+while(t<xmouse)
+{
+t=t+30;
+ct++;
+}
+
+z=ct;
+
+t=20;
+ct=0;
+while(t<ymouse)
+{
+t=t+30;
+ct++;
+}
+
+k=ct;
+
+
+//Se becco na bomba
+if(matr[k][z]==1)
+{matr[k][z]=3;
+perso=1;cv.perso(matr);
+ta.append("Hai beccato una bomba \nHai perso");
+
+}
+else if(matr[k][z]==0)
+{
+cx=35+(z-1)*30;
+cy=35+(k-1)*30;
+coord[l][0]=cx;
+coord[l][1]=cy;
+matr[k][z]=2;
+//Conto quante bombe ho vicino
+bvicine=0;
+
+if(matr[k][z+1]==1)bvicine++;
+if(matr[k][z-1]==1)bvicine++;
+if(matr[k+1][z]==1)bvicine++;
+if(matr[k-1][z]==1)bvicine++;
+if(matr[k+1][z-1]==1)bvicine++;
+if(matr[k-1][z-1]==1)bvicine++;
+if(matr[k-1][z+1]==1)bvicine++;
+if(matr[k+1][z+1]==1)bvicine++;
+
+testo[l]=(char)(bvicine+'0');
+cv.scrivi(testo,coord,l+1);
+cv.repaint();
+l++;
+caselle--;
+
+
+}
+
+
+
+}
+} else{}
+if(caselle==0)
+{
+ta.append("Hai vinto");
+cv.vinto();
+}
+}
+
+
+}
+
+public void mouseEntered(MouseEvent e) {}
+public void mouseExited(MouseEvent e) {}
+public void mousePressed(MouseEvent e) {}
+public void mouseReleased(MouseEvent e) {}
+
+
+}
+
+
+class Cmina
+{
+
+public static void main(String argv[])
+{
+Frame f = new Mouse();
+f.addWindowListener(new GestoreFinetra());
+f.setVisible(true);
+}
+
+}

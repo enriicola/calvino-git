@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function somma(){
+			
+			var a, b, ris;
+			
+			a=parseInt(window.document.calcola.primo.value);
+			
+			b=parseInt(window.document.calcola.secondo.value);
+			
+			ris=a+b;
+			window.document.calcola.risl.value=ris;
+			
+			return;
+		}
+	</script>
+</head>
+
+<body>
+	<form name="calcola">
+		N1 <input type="text" name="primo">
+		N2 <input type="text" name="secondo">
+		Il risultato e' <input type="text" name="risl" readonly>
+		<input type="reset">
+		<input type="button" value="calcola" onclick="somma()">
+	</form>
+</body>
+</html>

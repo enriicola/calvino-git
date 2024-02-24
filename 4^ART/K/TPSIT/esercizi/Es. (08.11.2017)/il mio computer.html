@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<title>Il mio PC</title>
+<script type="text/javascript">
+function scriviTesto(testo){
+ document.getElementById("descrizione").innerHTML=testo;
+}
+</script>
+</head>
+<body>
+<img src="img_pc.jpg" width="450" height="330" alt="pc" usemap="#pcmap" />
+<map name="pcmap">
+
+ <area shape="poly" coords ="80,0,260,0,260,200,80,170"
+onmouseover="scriviTesto('Monitor. Dispositivo di output che permette di visualizzare immagini e video.')"
+href="http://it.wikipedia.org/wiki/Monitor"target="_blank" alt="Monitor">
+ 
+ <area shape="poly" coords ="0,280,75,230,290,275,230,325"
+onmouseover="scriviTesto('Tastiera. Dispositivo di input che permette di inserire testo.')"
+href="http://it.wikipedia.org/wiki/Tastiera_(informatica)" target="_blank" alt="Tastiera">
+ 
+ <area shape="poly" coords ="300,275,360,280,360,310,295,300"
+onmouseover="scriviTesto('Mouse. Dispositivo di input che permette di spostare un cursore sullo schermo.')"
+href="http://it.wikipedia.org/wiki/Mouse" target="_blank" alt="Mouse">
+ 
+ <area shape="poly" coords ="275,60,365,30,440,40,440,220,360,270,275,250"
+onmouseover="scriviTesto('Case. Dispositivo contenente i componenti principali del computer.')"
+href="http://it.wikipedia.org/wiki/Case_(hardware)" target="_blank" alt="Case">
+ 
+ </map>
+ 
+ <p id="descrizione">Sposta il mouse sull'immagine per visualizzare le informazioni.
+ Se fai clic troverai le informazioni di Wikipedia.</p>
+ 	
+</body>
+</html>

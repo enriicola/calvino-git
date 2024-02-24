@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="it">
+<head>
+	<meta charset="utf-8">
+	<title>Italia Informazioni</title>
+	<script type="text/javascript">
+	function scriviTesto(testo){
+	 document.getElementById("descrizione").innerHTML=testo;
+	}
+	</script>
+</head>
+<body bgcolor="white">
+	
+	<h1 align="center"><font color="green">IT</font><font color="white">AL</font><font color="red">IA</font></h1>
+	<font color="white">
+	<img src="3092.png" width="450" height="330" alt="Cartina Politica" usemap="#pcmap" />
+	
+	<map name="pcmap">
+
+	<area shape="poly" coords ="80,0,260,0,260,200,80,170"
+onmouseover="scriviTesto('Liguria. 1 565 566 abitanti circa.')"
+	href="http://it.wikipedia.org/wiki/Liguria"target="_blank" alt="Liguria">
+
+	<area shape="poly" coords ="80,0,260,0,260,200,80,170"
+	onmouseover="scriviTesto('Valle d'Aosta. 126 687 abitanti circa.')"
+	href="https://it.wikipedia.org/wiki/Valle_d%27Aosta"target="_blank" alt="Valle d'Aosta">
+
+	<area shape="poly" coords ="80,0,260,0,260,200,80,170"
+	onmouseover="scriviTesto('Trentino-Alto Adige. 1 063 748 abitanti circa.')"
+	href="https://it.wikipedia.org/wiki/Trentino-Alto_Adige"target="_blank" alt="Trentino Alto Adige">
+
+	<area shape="poly" coords ="80,0,260,0,260,200,80,170"
+	onmouseover="scriviTesto('Lombardia. 10 023 876 abitanti circa.')"
+	href="https://it.wikipedia.org/wiki/Lombardia"target="_blank" alt="Lombardia">
+
+	<area shape="poly" coords ="80,0,260,0,260,200,80,170"
+	onmouseover="scriviTesto('Veneto. 4 903 705 abitanti circa.')"
+	href="https://it.wikipedia.org/wiki/Veneto"target="_blank" alt="Venezia">
+
+	<area shape="poly" coords ="80,0,260,0,260,200,80,170"
+	onmouseover="scriviTesto('Piemonte. 4 396 293 abitanti circa.')"
+	href="https://it.wikipedia.org/wiki/Piemonte"target="_blank" alt="Piemonte">
+
+	<area shape="poly" coords ="80,0,260,0,260,200,80,170"
+	onmouseover="scriviTesto('Friuli-Venezia Giulia. 1 216 134 abitanti circa.')"
+	href="https://it.wikipedia.org/wiki/Friuli-Venezia_Giulia"target="_blank" alt="Friuli Venezia Giulia">
+
+	<area shape="poly" coords ="80,0,260,0,260,200,80,170"
+	onmouseover="scriviTesto('Emilia-Romagna. 4 449 538 abitanti circa.')"
+	href="https://it.wikipedia.org/wiki/Emilia-Romagna"target="_blank" alt="Emilia Romagna">
+	</map>
+ 
+	<p id="descrizione">Sposta il mouse da una regione all'altra per visualizzarne il nome.
+	 Se clicchi su una di esse troverai le informazioni di Wikipedia.</p>
+ 	</font>
+</body>
+</html>

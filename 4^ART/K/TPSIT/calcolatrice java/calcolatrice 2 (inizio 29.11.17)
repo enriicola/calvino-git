@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+	<h2> Calcolatrice </h2>
+	<table border="1">
+	  <tr>			
+	  <td>		
+		1°numero <input type="value" id="primo">
+		<br>
+		2°numero <input type="value" id="secondo">
+		</td>
+	    </tr>
+		<button onclick="somma()"> + </button>
+		<button onclick="differenza()"> - </button>
+		<button onclick="prodotto()"> * </button>
+		<button onclick="quoziente()"> / </button>
+		<br>
+		<br>
+		<br>
+	Risultato <p id="totale"> </p>
+	</table>
+	
+	
+	<script>
+		function somma() {
+			var num1;
+			var num2;
+			var totale;
+			num1=document.getElementById("primo").value
+			num2=document.getElementById("secondo").value
+			totale=parseInt(num1)+parseInt(num2)
+			document.getElementById("totale").innerHTML=totale;
+			
+		}
+		
+		function differenza() {
+			var num1;
+			var num2;
+			var totale;
+			num1=document.getElementById("primo").value
+			num2=document.getElementById("secondo").value
+			totale=parseInt(num1)-parseInt(num2)
+			document.getElementById("totale").innerHTML=totale;
+			
+		}
+		
+		function prodotto() {
+			var num1;
+			var num2;
+			var totale;
+			num1=document.getElementById("primo").value
+			num2=document.getElementById("secondo").value
+			totale=parseInt(num1)*parseInt(num2)
+			document.getElementById("totale").innerHTML=totale;
+			
+		}
+		
+		function quoziente() {
+			var num1;
+			var num2;
+			var totale;
+			num1=document.getElementById("primo").value
+			num2=document.getElementById("secondo").value
+			totale=parseInt(num1)/parseInt(num2)
+			document.getElementById("totale").innerHTML=totale;
+			
+		}
+		
+		function aggiungi(n) {
+			document.tabella.
+		
+		
+		}
+	</script>
+</body>
+</html>

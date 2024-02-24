@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Parcheggio
+comment1.params=a\ m
+comment1.target=Parcheggio(boolean[],\ boolean[])
+comment2.params=a
+comment2.target=void\ Visualizza(boolean[])
+comment3.params=
+comment3.target=void\ Pagamento()
+comment4.params=auto\ a
+comment4.target=int\ Entrata(Auto,\ boolean[])
+comment5.params=auto\ a
+comment5.target=boolean\ Uscita(Auto,\ boolean[])
+comment6.params=moto\ m
+comment6.target=int\ EntrataMoto(Moto,\ boolean[])
+comment7.params=moto\ m
+comment7.target=boolean\ UscitaMoto(Moto,\ boolean[])
+numComments=8

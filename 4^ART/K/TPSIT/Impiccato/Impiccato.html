@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Impiccato online!</title>
+  <link href="miostile.css" rel="stylesheet" type="text/css"/>
+  <meta charset="utf-8">
+  <script type="text/javascript" src="mio.js"></script>
+</head>
+<body bgcolor="black" vlink="white">
+
+	<nav><h1 text="white"> Benvenuto al gioco dell'Impiccato!</h1>
+	</nav>
+	<div id="oscuramento"></div>
+	<div id="window"></div>
+	<section id="sezione1">
+	<table>
+	<tr>
+		<td><img src="inizio.png" height="500px"></td>
+		<td><input type="button" class="startbutton" value="Clicca qui per iniziare a giocare!" onclick="start()"></td>
+	</tr>
+	</table>
+	</section>
+	
+	<section id="sezione2">
+	<table>
+	<tr>
+		<td><img id="img" src="errore0.png" height="500px"></td>
+		<td><p id="demo"></p></td>
+	</tr>
+	</table>
+		<table style="border:0px;">
+		    <tr>
+				<td><input type="button" class="lettere" value="A" onclick="impiccato(this)"/></td>
+				<td><input type="button" class="lettere" value="B" onclick="impiccato(this)"/></td>
+				<td><input type="button" class="lettere" value="C" onclick="impiccato(this)"/></td>
+				<td><input type="button" class="lettere" value="D" onclick="impiccato(this)"/></td>
+				<td><input type="button" class="lettere" value="F" onclick="impiccato(this)"/></td>
+				<td><input type="button" class="lettere" value="E" onclick="impiccato(this)"/></td>
+				<td><input type="button" class="lettere" value="G" onclick="impiccato(this)"/></td>
+			</tr>
+			<tr>
+				<td><input type="button" class="lettere" value="H" onclick="impiccato(this)"/></td>
+				<td><input type="button" class="lettere" value="I" onclick="impiccato(this)"/></td>
+				<td><input type="button" class="lettere" value="J" onclick="impiccato(this)"/></td>
+				<td><input type="button" class="lettere" value="K" onclick="impiccato(this)"/></td>
+				<td><input type="button" class="lettere" value="L" onclick="impiccato(this)"/></td>
+				<td><input type="button" class="lettere" value="M" onclick="impiccato(this)"/></td>
+				<td><input type="button" class="lettere" value="N" onclick="impiccato(this)"/></td>
+			</tr>
+			<tr>
+				<td><input type="button" class="lettere" value="O" onclick="impiccato(this)"/></td>
+				<td><input type="button" class="lettere" value="P" onclick="impiccato(this)"/></td>
+				<td><input type="button" class="lettere" value="Q" onclick="impiccato(this)"/></td>
+				<td><input type="button" class="lettere" value="R" onclick="impiccato(this)"/></td>
+				<td><input type="button" class="lettere" value="S" onclick="impiccato(this)"/></td>
+				<td><input type="button" class="lettere" value="T" onclick="impiccato(this)"/></td>
+				<td><input type="button" class="lettere" value="U" onclick="impiccato(this)"/></td>
+			</tr>
+			<tr>
+				<td><input type="button" class="lettere" value="V" onclick="impiccato(this)"/></td>
+				<td><input type="button" class="lettere" value="W" onclick="impiccato(this)"/></td>
+				<td><input type="button" class="lettere" value="X" onclick="impiccato(this)"/></td>
+				<td><input type="button" class="lettere" value="Y" onclick="impiccato(this)"/></td>
+				<td><input type="button" class="lettere" value="Z" onclick="impiccato(this)"/></td>
+			</tr>
+		</table>
+	</section>
+	
+	<section id="sezione3">
+	<table>
+		<tr>
+			<td><label for="Valutazione"><h4> Lascia una recensione! </h4></label></td>
+		</tr>
+		<tr>
+			<td><select id="recensione" name="recensione">
+			<option value="5"> ♥ ♥ ♥ ♥ ♥ </option>
+			<option value="4"> ♥ ♥ ♥ ♥ </option>
+			<option value="3"> ♥ ♥ ♥ </option>
+			<option value="2"> ♥ ♥ </option>
+			<option value="1"> ♥ </option>
+			</select></td>
+		</tr>
+		<tr>
+			<td><textarea> Possiamo sempre migliorare! Lascia la tua opinione... </textarea></td>
+		</tr>
+		<tr>
+			<td><input type="submit" value="invia" onclick="controlli()"></td>
+		</tr>
+		<tr>
+			<td><input type="reset" value="reset"></td>
+		</tr>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<h5 align="center"> Scritto da Matteo Caneva ed Enrico Pezzano </h5>
+	</table>
+	</section>
+</body>
+</html>

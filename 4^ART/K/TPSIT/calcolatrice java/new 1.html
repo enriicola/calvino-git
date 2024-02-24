@@ -1,0 +1,96 @@
+<!doctype HTML>
+
+<html>
+		<link href="style.css" rel="stylesheet" type="text/css" media="all" />
+        <head><title>Calcolatrice</title></head>
+        <script type=text/javascript>
+                var temp;
+                var operazione = "";
+                function aggiungi(valore) {
+                        if(calcolatrice.barra.value == 0 || calcolatrice.barra.value == "") {
+                                calcolatrice.barra.value = valore;
+                        } else {                                               
+                                calcolatrice.barra.value = (parseInt(calcolatrice.barra.value) * 10)  + parseInt(valore);
+                        }
+                }-
+               
+                function somma() {
+                        temp = calcolatrice.barra.value;
+                        calcolatrice.barra.value = 0;
+                        operazione = "Somma";                  
+                }
+               
+                function sottrazione() {
+                        temp = calcolatrice.barra.value;
+                        calcolatrice.barra.value = 0;
+                        operazione = "Sottrazione";    
+                }
+               
+                function moltiplicazione() {
+                        temp = calcolatrice.barra.value;
+                        calcolatrice.barra.value = 0;
+                        operazione = "Moltiplicazione";
+                }
+               
+                function divisione() {
+                        temp = calcolatrice.barra.value;
+                        calcolatrice.barra.value = 0;
+                        operazione = "Divisione";      
+                }
+               
+                function risultato() {
+                        if(operazione == "Somma") {
+                                calcolatrice.barra.value = parseInt(calcolatrice.barra.value) + parseInt(temp);
+                                operazione = "";
+                        } else if(operazione == "Sottrazione") {
+                                calcolatrice.barra.value = parseInt(temp) - parseInt(calcolatrice.barra.value);
+                                operazione = "";
+                        } else if(operazione == "Moltiplicazione") {
+                                calcolatrice.barra.value = parseInt(temp) * parseInt(calcolatrice.barra.value);
+                                operazione = "";
+                        } else if(operazione == "Divisione") {
+                                calcolatrice.barra.value = parseInt(temp) / parseInt(calcolatrice.barra.value);
+                                operazione = "";
+                        }
+                }
+        </script>
+        <body>
+				<h1 class="banane"> <b> CALCOLATRICE DIVINA </b> </h1>
+                <form name = 'calcolatrice'>
+				<div class="box">
+						<form name="FORM" >
+                        <table border=1 style="border-collapse:collapse">
+                        <tr><td colspan=5><textarea id="testo" cols=25 rows=3 value="" name="barra" readonly>
+                        </textarea> </td></tr>
+						
+						<tr>
+                        <td>    <input type='button' value='7' onclick='aggiungi(this.value);'> </td>
+                        <td>    <input type='button' value='8' onclick='aggiungi(this.value);'> </td>
+                        <td>    <input type='button' value='9' onclick='aggiungi(this.value);'> </td>
+                        <td>    <input type='button' value='+' onclick='somma();'>
+						</tr>
+                        <tr>
+                        <td>    <input type='button' value='4' onclick='aggiungi(this.value);'> </td>
+                        <td>    <input type='button' value='5' onclick='aggiungi(this.value);'> </td>
+                        <td>    <input type='button' value='6' onclick='aggiungi(this.value);'> </td>
+					    <td>    <input type='button' value='-' onclick='sottrazione();'>        </td>
+						</tr>
+						
+                        <tr>
+						<td>    <input type='button' value='1' onclick='aggiungi(this.value);'> </td>
+                        <td>    <input type='button' value='2' onclick='aggiungi(this.value);'> </td>
+						<td>    <input type='button' value='3' onclick='aggiungi(this.value);'> </td>
+				        <td>    <input type='button' value='*' onclick='moltiplicazione();'>    </td>  
+						</tr>
+						
+                        <tr>
+						<td>    <input type='button' value='C' onclick='calcolatrice.barra.value=0;'> </td>
+						<td>    <input type='button' value='0' onclick='aggiungi(this.value);'> </td>
+						<td>    <input type='button' value='=' onclick='risultato();'>          </td>
+						<td>    <input type='button' value='/' onclick='divisione();'>          </td>
+						</tr> 
+						</table>
+				</form>
+				</div>
+        </body>
+</html>

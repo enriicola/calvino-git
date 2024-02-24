@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<link href="../masterMind.css" rel="stylesheet" type="text/css">
+		<title> MASTERMIND </title>
+		<script src = "../javascript/cambiaImmagine1.js"></script>
+		<script src = "../javascript/funzMasterMind1.js"></script>
+	</head>
+	<body>
+		<div align="center" id="pagina">
+			<br> <img src="../immagini/mastermind.png" alt="MASTERMIND"> <br><br>
+			<form name="masterMind">
+				<table border="1" align="center">
+					<tr height="200px">
+						<td width="15%" align="center"><h2> TENTATIVO: </h2></td>
+						<td width="60%" align="center">
+							<img id="c1" onclick="cambiaImmagine1()" src="../immagini/cerchio_vuoto.png" alt="Immagine cerchio vuoto" width="100" height="100">
+							<img id="c2" onclick="cambiaImmagine2()" src="../immagini/cerchio_vuoto.png" alt="Immagine cerchio vuoto" width="100" height="100">
+							<img id="c3" onclick="cambiaImmagine3()" src="../immagini/cerchio_vuoto.png" alt="Immagine cerchio vuoto" width="100" height="100">
+							<img id="c4" onclick="cambiaImmagine4()" src="../immagini/cerchio_vuoto.png" alt="Immagine cerchio vuoto" width="100" height="100">
+						</td>
+						<td width="25%" align="center">
+							<img onclick="tentativo()" src="../immagini/freccia.png" alt="INVIA TENTATIVO" width="80" height="80">
+							<p> INVIA TENTATIVO </p>
+						</td>
+					</tr>
+					<tr>
+						<td width="15%" align="center"><h2> TENTATIVI PRECEDENTI: </h2></td>
+						<td width="60%" align="center"> <p id="tent"></p> </td>
+						<td id="pos" width="25%" align="center"></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</body>
+</html>

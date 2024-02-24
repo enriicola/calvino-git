@@ -1,0 +1,121 @@
+body{
+	background-color:black;
+	font-family:georgia;
+	margin:0px;
+	background-image:url("wood.jpg");
+	background-repeat: no-repeat;
+	background-size: auto;
+ }
+ 
+h1{
+	color: white; 
+	
+}
+p{
+	float:right;
+	margin-top:200px;
+	margin-right:300px;
+	font-size:45px;
+	background-color:#4dd2ff;
+	border: 4px solid dodgerblue;
+	text-align:center;
+}
+#demo{
+	float:right;
+	width:20%;
+	margin-top:20%;
+	margin-right:20%;
+}
+ 
+aside{
+	/*width:600px;*/
+	margin:10%;
+}
+
+input{
+	font-size:24px;
+	background-color:#4dd2ff;
+	height:90px;
+	border: 4px solid dodgerblue;
+	width:500px;
+	float:left;
+	text-align:center;
+}
+
+img{
+	margin:4%;
+}
+
+nav{
+	background-color:black;	
+	height:11%;	
+	border-bottom:4px;
+	border-color:dodgerblue;
+	border-bottom-style:solid;
+	text-align:center;
+	line-height:60px;
+}
+
+#oscuramento{
+	position:absolute;
+	background-color:rgba(0,0,0,0.6);
+	height:100%;
+	width:100%;
+	display:none;
+}
+
+#window{
+	display:none;
+	position:absolute;
+	height:400px;
+	width:600px;
+	background-color:white;
+	border:solid 4px dodgerblue;
+	top:50%;
+	left:50%;
+	margin-top:-200px;
+	margin-left:-300px;
+	text-align:center;
+	font-size:32px;
+	padding-top:100px;
+}
+
+#sezione1{
+	
+}
+#sezione2{
+	display:none;
+}
+#sezione3{
+	display:none;
+}
+
+.startbutton{
+	margin: 25%;
+	background-color:#4dd2ff;
+	font-size:25px;
+	border: 4px solid lightblue;
+	/*transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s;*/
+	color: #0040ff;
+	width:500px;
+	height:60px;
+}
+.startbutton:hover{
+	background-color:white;
+}
+
+.lettere {
+	background-color:#4dd2ff;
+	font-size:24px;
+	border: 4px solid dodgerblue;
+	/*transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s;*/
+	color: #0040ff;
+	width:70px;
+	height:70px;
+}
+
+.lettere:hover{
+	background-color:white;
+}

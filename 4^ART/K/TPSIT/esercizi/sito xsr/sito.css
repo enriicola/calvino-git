@@ -1,0 +1,57 @@
+<style>
+
+a{
+	display:block;
+	width:180px;
+	height: 40px;
+	line-height: 40px;
+	background-color: #222222;
+	color: white;
+	text-align:center;
+	text-decoration:none;
+	vertical-align: middle;
+			}
+/*a:hover{
+	background-color:#ff751a;*/
+
+h1 {
+	text-align: left;
+	font-family: "Arial", Helvetica, sans-serif;
+}
+
+h2 {
+	text-align: center-left;
+	font-family: "Arial", Helvetica, sans-serif;
+}
+
+p  {
+	text-align: left;
+	font-family: "Arial", Helvetica, sans-serif;
+	font-size: 15px;
+}
+
+.xsr {
+	display: block;
+	margin: 0 auto;
+}
+
+.elenco {
+	border: 100px; /*sto per scappare di testa*/
+	margin: 100px 100px 100px 100px;
+}
+
+body {
+				width: 700px;
+				margin: 100px 100px 100px 100px;
+				border: 1px;
+				color: #585858;
+			    background-image: url("paper.png");
+			}
+			
+* {
+				margin:0;
+				padding:0;
+		
+			}
+			
+</style>

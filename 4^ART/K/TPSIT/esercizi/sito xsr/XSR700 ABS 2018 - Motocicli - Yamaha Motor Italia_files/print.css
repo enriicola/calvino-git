@@ -1,0 +1,18 @@
+.gallery-module,
+.packages-holder .img-cover,
+.filter-content,
+.links {
+	display: none; }
+
+div.featureApp li {background: transparent; }
+	
+header, footer, .page-header , .c_share, .wishlist-func, .banners {display:none}
+
+.product-info-left .product-color-gallery a {display:none}
+.product-info-left div.pricing a.rounded{display:none}
+.make-it-yours nav.floatr a {display:none}
+.features-techspecs .txtbutton {display:none}
+
+.product-info-left .header {height: 20px; }
+.product-info-left h2 {height: 20px; }
+.features-techspecs h3 {padding: 20px 0 10px 30px; }

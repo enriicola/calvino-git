@@ -1,0 +1,32 @@
+﻿require.config({
+    baseUrl: labels.CdnUrl + 'static-worlds/js',
+    'paths': {
+        jquery: 'vendor/jquery-1.9.1.min',
+        'jquery.mCustomScrollbar': 'plugins/jquery.mCustomScrollbar.concat.min',
+        'jquery.jqtransform': 'plugins/jquery.jqtransform',
+        'jquery.xdomainrequest': 'plugins/jQuery.XDomainRequest',
+        knockout: 'vendor/knockout-2.2.1',
+        sammy: 'vendor/sammy-latest.min',
+        underscore: 'vendor/underscore-min',
+        Class: 'vendor/Class',
+        handlebars: 'vendor/handlebars.min'
+    },
+    shim: {
+        'jquery.mCustomScrollbar': ['jquery'],
+        'jquery.jqtransform': ['jquery'],
+        'jquery.xdomainrequest': ['jquery'],
+        'underscore': {
+            exports: '_'
+        },
+        'handlebars': {
+            exports: 'Handlebars'
+        },
+        Class: {
+            exports: 'Class'
+        },
+        sammy: {
+            deps: ['jquery'],
+            exports: 'Sammy'
+        }
+    }
+});

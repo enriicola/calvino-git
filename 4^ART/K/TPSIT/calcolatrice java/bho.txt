@@ -1,0 +1,62 @@
+public static void main(String[] args) {
+// Qui verranno istanziati tutti gli oggetti che compongono la tua applicazione
+Windows w = new Windows();
+}
+}
+
+
+
+Windows.java
+
+
+import java.awt.*;
+import javax.swing.JFrame;
+
+public class Windows extends JFrame {
+public Windows() {
+setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+Container c = getContentPane();
+c.setLayout(new BorderLayout());
+add(new Display(), BorderLayout.NORTH);
+setTitle("Calcolatrice");
+setSize(250,350);
+setVisible(true);
+}
+}
+
+
+Display.java
+
+
+import javax.swing.JTextField;
+
+public class Display {
+
+public Display(){
+JTextField display = new JTextField();
+display.setText("Qui la stringa");
+display.setEditable(false);
+}
+
+}
+
+
+c.setLayout(new GridLayout(6,5));
+add(new Button("1"));
+add(new Button("2"));
+add(new Button("3"));
+add(new Button("4"));
+add(new Button("5"));
+add(new Button("6"));
+add(new Button("7"));
+add(new Button("8"));
+add(new Button("9"));
+add(new Button("0"));
+	
+	
+	
+	
+	
+	
+	
+	

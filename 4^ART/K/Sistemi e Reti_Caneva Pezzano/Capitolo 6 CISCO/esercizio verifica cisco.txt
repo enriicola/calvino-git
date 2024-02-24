@@ -1,0 +1,10 @@
+2 router
+1 wireless
+1 no
+collegati tra loro
+
+ogni router ha 3 host
+
+- inviare i pacchetti tra l host della prima rete con quello della seconda rete
+
+serve uno switch.

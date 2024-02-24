@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Meteo GE</title>
+<script type="text/javascript">
+   function calcola()
+   {
+   var Lun, Mar, Mer, Gio, Ven, Sab, Dom, max, min;
+   Lun = parseInt(window.document.settimana.Lunedi.value);
+   Mar = parseInt(window.document.settimana.Martedi.value);
+   Mer = parseInt(window.document.settimana.Mercoledi.value);
+   Gio = parseInt(window.document.settimana.Giovedi.value);
+   Ven = parseInt(window.document.settimana.Venerdi.value);
+   Sab = parseInt(window.document.settimana.Sabato.value);
+   Dom = parseInt(window.document.settimana.Domenica.value);
+   
+   //calcolo temperatura massima
+   if(Lun>Mar){
+	max=Lun;
+	min=Mar;
+   }
+	else{
+		max=Mar;
+		min=Lun;
+	}
+   if(max<Mar){
+	max=Mar;
+   }
+   if(max<Mer){
+	max=Mer;
+   }
+   if(max<Gio){
+	max=Gio;
+   }
+   if(max<Ven){
+	max=Ven;
+   }
+   if(max<Sab){
+	max=Sab;
+   }
+   if(max<Dom){
+	max=Dom;
+   }
+   //calcolo temperatura minima
+   if(min>Mar){
+	min=Mar;
+   }
+   if(min>Mer){
+	min=Mer;
+   }
+   if(min>Gio){
+	min=Gio;
+   }
+   if(min>Ven){
+	min=Ven;
+   }
+   if(min>Sab){
+	min=Sab;
+   }
+   if(min>Dom){
+	min=Dom;
+   }
+   window.document.settimana.max.value=max;
+   window.document.settimana.min.value=min;
+   return;
+   }
+</script>
+</head>
+<body>
+<h1 align="center"> Meteo Settimanale Genova (GE) </h1>
+
+<form name="settimana">
+	<table id="tabella">
+    <tr>
+	<td> Lunedì <input type = "text" name ="Lunedi"></td>
+	<td> Martedì <input type = "text" name ="Martedi"></td>
+	<td> Mercoledì <input type = "text" name ="Mercoledi"></td>
+	<td> Giovedì <input type = "text" name ="Giovedi"></td>
+	<td> Venerdì <input type = "text" name ="Venerdi"></td>
+	<td> Sabato <input type = "text" name ="Sabato"></td>
+	<td> Domenica <input type = "text" name ="Domenica"></td>
+	</tr>
+	<tr>
+	<td> Temperatura Massima: <input type = "text" name="max" readonly></td>
+	</tr>
+	<tr>
+	<td> Temperatura Minima: <input type = "text" name="min" readonly></td>
+	</tr>
+	</table>
+
+<input type = "reset">
+<input type = "button" value = "Non cliccare questo tasto" onclick="calcola()">
+</form>
+</body>
+</html>

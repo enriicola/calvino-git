@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Timer()
+comment0.text=\r\n\ Costruttore\ degli\ oggetti\ di\ classe\ \ Timer\r\n
+comment1.params=y
+comment1.target=int\ sampleMethod(int)
+comment1.text=\r\n\ Un\ esempio\ di\ metodo\ -\ aggiungi\ i\ tuoi\ commenti\r\n\ \r\n\ @param\ \ y\ \ \ un\ parametro\ d'esempio\ per\ un\ metodo\r\n\ @return\ \ \ \ \ la\ somma\ di\ x\ e\ y\r\n
+numComments=2
